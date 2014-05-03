@@ -145,12 +145,16 @@ function hideAllComments(){
     });
 }
 
-function init(){
+function commentify(input, index) {
+    input.before("<div class=\"notes-marker no-user-select notes-hasnotes\" style=\"position: relative; z-index: 597; float: right;\"><span class=\"notes-marker-icon icons icons-notes\"></span><span class=\"notes-marker-count\">2</span></div>");
+    input.after("<div class='notes-list notes-list-" + index + " dontshow'><ul></ul></div>");
 
+}
+
+function init(){
     //Adding generic divs to all paragraphs on page load
     $("p").each(function(index){
-        $(this).after("<div class='notes-list notes-list-" + index + " {para:" + index + "} dontshow'><ul></ul></div>");
-        $(this).after("<button class='notes-comment-button {para:" + index + "}' index='" + index + "'>Comment</button>");
+        commentify($(this), index);
     });
 
     hideAllComments();
