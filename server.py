@@ -3,6 +3,7 @@ __author__ = 'soumyakanti'
 from flask import Flask
 from pymongo import MongoClient
 import json
+from crossdomain import crossdomain
 
 app = Flask(__name__)
 
@@ -11,10 +12,12 @@ comments = db.comments
 
 
 @app.route('/')
+@crossdomain(origin='*')
 def hello_world():
     return 'Hello World!'
 
 @app.route('/geturl/<string:url>')
+@crossdomain(origin='*')
 def get_comments_url(url):
     comments_pointer = comments.find({"url": url})
     comments_array = []
