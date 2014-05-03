@@ -181,14 +181,16 @@ function initClueTip() {
             dropShadow: false,
             hoverIntent: false,
             sticky: true,
-            mouseOutClose: true,
+            mouseOutClose: false,
             local :true,
-            closePosition: 'title',
+            closePosition: 'top',
             closeText: '<img src="http://icsas.herokuapp.com/images/cross.png" alt="close" />',
             fx: {
                 open: 'slideDown',
                 openSpeed: 'slow'
-            }
+            },
+            showTitle: false,
+            positionBy: 'fixed'
         });
     });
 }

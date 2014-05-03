@@ -1,4 +1,4 @@
-/* global */
+.cluetip-jtip .cluetip-inner/* global */
 div.ui-cluetip {
   font-size: 1em;
 }
@@ -118,14 +118,13 @@ div.clue-bottom-default .cluetip-arrows {
   background-color: #fff;
 }
 .cluetip-jtip .cluetip-outer {
-  border: 2px solid #ccc;
+  border: 3px solid #57AD68;
   position: relative;
   /*background-color: #fff;*/
 }
 
 .cluetip-jtip .cluetip-inner {
-  padding: 5px;
-  display: inline-block;
+  padding-top: 0px;
 }
 .cluetip-jtip div.cluetip-close {
   text-align: right;

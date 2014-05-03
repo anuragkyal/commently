@@ -12136,13 +12136,32 @@ ul.post-list > li:before {
 }
 
 .notes-list {
-    position: absolute;
-    width: 280px;
+    position: relative;
     -webkit-transition: top .1s;
     -moz-transition: top .1s;
     -ms-transition: top .1s;
     -o-transition: top .1s;
     transition: top .1s
+}
+
+.notes-list ul li{
+    font-size:12px;
+}
+
+.notes-list div{
+    padding-top: 25px;
+}
+
+.notes-list button{
+    background: none;
+    border: 0px;
+    font-size: 13px;
+    color: #468C54;
+}
+
+.notes-list input{
+    width: auto;
+    float: left;
 }
 
 .notes-container {
