@@ -2,6 +2,8 @@
  * Created by anurag on 3/5/14.
  */
 
+var userId;
+
 function loadFacebookSDK() {
     window.fbAsyncInit = function() {
         FB.init({
@@ -34,6 +36,7 @@ function getLoginStatus() {
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
             //console.log(response.authResponse.userID);
+            userId = response.authResponse.userID;
             result = "SUCCESS";
         } else {
             FB.login(function(response) {
@@ -41,6 +44,7 @@ function getLoginStatus() {
                     FB.api('/me/permissions', function(response) {
                     });
                     //console.log(response.authResponse.userID);
+                    userId = response.authResponse.userID;
                     result = "SUCCESS";
                 }
             }, {scope:'email, user_about_me, user_birthday, user_location'});
@@ -56,7 +60,7 @@ function getCurrentURL(){
 }
 
 function populateComment(paraNumber, user, comment){
-    $(".notes-list-" + paraNumber).find("ul").append("<li>" + user + ":" + comment + "</li>");
+    $(".notes-list-" + paraNumber).find("ul").append("<li><img src='http://graph.facebook.com/" + user + "/picture'></img> " + comment + "</li>");
 
     var $this = $(".notes-list-" + paraNumber);
     var count = $($this).find("li").size();
@@ -115,11 +119,11 @@ function postComment(comment, para) {
             cache:false,
             url: "http://icsas.herokuapp.com/postComments",
             type:'POST',
-            data: {url : getCurrentURL(), comment : comment, user : ""/*pick from selector*/, para: para},
+            data: {url : getCurrentURL(), comment : comment, user : userId, para: para},
             success : function(response) {
                 if (response == 'SUCCESS') {
                     // TODO: CSS ninja, please populate user from fb.
-                    populateComment(para, "", comment);
+                    populateComment(para, userId, comment);
                     $(".notes-list-" + para).find("input").val("");
                 }
                 return response;
