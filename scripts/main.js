@@ -56,8 +56,8 @@ function getLoginStatus() {
 
 
 function getCurrentURL(){
-    encodeURIComponent($(location).attr('href').split("//")[1]);
-    //return "0.0.0.0%3A5000"; //test url
+    //encodeURIComponent($(location).attr('href').split("//")[1]);
+    return "0.0.0.0%3A5000"; //test url
 }
 
 function populateComment(paraNumber, user, comment){
