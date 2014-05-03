@@ -57,27 +57,39 @@ function getLoginStatus() {
 
 function getCurrentURL(){
     encodeURIComponent($(location).attr('href').split("//")[1]);
+    //return "0.0.0.0%3A5000"; //test url
 }
 
-function populateCommentsOnLoad(){
+function populateComment(paraNumber, user, comment){
+    $(".notes-list-" + paraNumber).find("ul").append("<li>" + user + ":" + comment + "</li>");
+}
 
+function fetchComments(url) {
+    // calling the api
+    var commentList = '';
+    $.ajax({
+        async: false,
+        cache:false,
+        url: "http://icsas.herokuapp.com/getcomments/" + url,
+        type:'get',
+        dataType: "json",
+        success : function(response) {
+            commentList = response;
+        }
+    });
+    return commentList;
 }
 
 function populateComments(commentList){
-    var commentInfoList = JSON.parse(commentList);
-
-    for(var i = 0; i< commentInfoList.length; i++){
-        var commentInfoMap = commentInfoList[i];
+    for(var i = 0; i< commentList.length; i++){
+        var commentInfoMap = commentList[i];
         populateComment(parseInt(commentInfoMap.para), commentInfoMap.user, commentInfoMap.comment);
     }
 }
 
-function populateComment(paraNumber, user, comment){
-    $($("p").get(paraNumber)).next(".notes-list").find("ul").append("<li>" + user + ":" + comment + "</li>");
+function populateCommentsOnLoad(){
+    populateComments(fetchComments(getCurrentURL()));
 }
-
-
-
 
 /*function getSelectedText() {
  $('#showSelected').on('click', function(){
@@ -93,24 +105,13 @@ function populateComment(paraNumber, user, comment){
  });
  }*/
 
-function fetchComments(url) {
-    // calling the api
-    $.ajax({
-        cache:false,
-        url: "http://icsas.herokuapp.com/getComments/" + url,
-        type:'get',
-        success : function(response) {
-            return response;
-        }
-    });
-}
-
 function postComment() {
     if (getLoginStatus() == "SUCCESS") {
         $.ajax({
             cache:false,
-            url: "http://icsas.herokuapp.com/postComments",
+            url: "http://icsas.herokuapp.com/postcomments",
             type:'post',
+            dataType: "json",
             data: {url : getCurrentURL(), comment : ""/*pick from selector*/, "user" : ""/*pick from selector*/, "para": "" /*TODO:Populate this*/},
             success : function(response) {
                 return response;
