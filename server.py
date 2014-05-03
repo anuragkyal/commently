@@ -3,6 +3,7 @@ __author__ = 'soumyakanti'
 from flask import Flask, request
 from pymongo import MongoClient
 import json
+import urllib
 from crossdomain import crossdomain
 
 app = Flask(__name__)
@@ -37,7 +38,7 @@ def post_comment():
             "comment": request.form['comment'],
             "user": request.form['user'],
             "para": request.form['para'],
-            "url": request.form['url']
+            "url": urllib.unquote(request.form['url']).decode('utf-8')
         })
         return 'SUCCESS'
     else:

@@ -56,12 +56,16 @@ function getLoginStatus() {
 
 
 function getCurrentURL(){
-    //encodeURIComponent($(location).attr('href').split("//")[1]);
-    return "0.0.0.0%3A5000"; //test url
+    return encodeURIComponent($(location).attr('href').split("//")[1]);
+    //return "0.0.0.0%3A5000"; //test url
 }
 
 function populateComment(paraNumber, user, comment){
     $(".notes-list-" + paraNumber).find("ul").append("<li>" + user + ":" + comment + "</li>");
+
+    var $this = $(".notes-list-" + paraNumber);
+    var count = $($this).find("li").size();
+    $(".notes-marker[index=\'" + $($this).attr('index') + "\']").find(".notes-marker-count").text(count > 0 ? count : "+");
 }
 
 function fetchComments(url) {
@@ -70,7 +74,7 @@ function fetchComments(url) {
     $.ajax({
         async: false,
         cache:false,
-        url: "http://icsas.herokuapp.com/getcomments/" + url,
+        url: "http://icsas.herokuapp.com/getComments/" + url,
         type:'get',
         dataType: "json",
         success : function(response) {
@@ -109,15 +113,19 @@ function populateCommentsOnLoad(){
  });
  }*/
 
-function postComment() {
+function postComment(comment, para) {
     if (getLoginStatus() == "SUCCESS") {
         $.ajax({
             cache:false,
-            url: "http://icsas.herokuapp.com/postcomments",
-            type:'post',
-            dataType: "json",
-            data: {url : getCurrentURL(), comment : ""/*pick from selector*/, "user" : ""/*pick from selector*/, "para": "" /*TODO:Populate this*/},
+            url: "http://icsas.herokuapp.com/postComments",
+            type:'POST',
+            data: {url : getCurrentURL(), comment : comment, user : ""/*pick from selector*/, para: para},
             success : function(response) {
+                if (response == 'SUCCESS') {
+                    // TODO: CSS ninja, please populate user from fb.
+                    populateComment(para, "", comment);
+                    $(".notes-list-" + para).find("input").val("");
+                }
                 return response;
                 // Expected - 'SUCCESS' for success, else 'FAILURE'
             }
@@ -149,6 +157,11 @@ function hideAllComments(){
     });
 }
 
+function sendComment(index) {
+    var comment = $(".notes-list-" + index).find("input").val();
+    postComment(comment, index);
+}
+
 function commentify(input, index) {
     input.before("<div class=\"notes-marker no-user-select notes-hasnotes\" index = \"" + index + "\" style=\"position: relative; z-index: 597; float: right;\">" +
                     "<span class=\"notes-marker-icon icons icons-notes\">" +
@@ -156,8 +169,7 @@ function commentify(input, index) {
                     "</span>" +
                     "<span class=\"notes-marker-count\">0</span>" +
                  "</div>");
-    input.after("<div class='notes-list notes-list-" + index + " dontshow' index = '" +index + "'><ul></ul></div>");
-
+    input.after("<div class='notes-list notes-list-" + index + " dontshow' index = '" +index + "'><ul></ul><div><input type='text'></input><button onclick='sendComment(" + index +")'>Comment</button></div></div>");
 }
 
 function initClueTip() {
