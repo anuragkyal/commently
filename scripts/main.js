@@ -60,12 +60,40 @@ $(function(){
 
 
 function init(){
+
+    //Adding generic divs to all paragraphs on page load
+    $("p").each(function(){
+        $(this).after("<div class='notes-list'><ul></ul></div>");
+        $(this).after("<button class='notes-button'>Comment</button>");
+    });
+
+    populateCommentsOnLoad();
     loadFacebookSDK();
 }
 
 function getCurrentURL(){
     encodeURIComponent($(location).attr('href').split("//")[1]);
 }
+
+function populateCommentsOnLoad(){
+
+}
+
+function populateComments(commentList){
+    var commentInfoList = JSON.parse(commentList);
+
+    for(var i = 0; i< commentInfoList.length; i++){
+        var commentInfoMap = commentInfoList[i];
+        populateComment(parseInt(commentInfoMap.para), commentInfoMap.user, commentInfoMap.comment);
+    }
+}
+
+function populateComment(paraNumber, user, comment){
+    $($("p").get(paraNumber)).next(".notes-list").find("ul").append("<li>" + user + ":" + comment + "</li>");
+}
+
+
+
 
 /*function getSelectedText() {
  $('#showSelected').on('click', function(){
