@@ -54,22 +54,6 @@ function getLoginStatus() {
     });
 }
 
-$(function(){
-    init();
-});
-
-
-function init(){
-
-    //Adding generic divs to all paragraphs on page load
-    $("p").each(function(){
-        $(this).after("<div class='notes-list'><ul></ul></div>");
-        $(this).after("<button class='notes-button'>Comment</button>");
-    });
-
-    populateCommentsOnLoad();
-    loadFacebookSDK();
-}
 
 function getCurrentURL(){
     encodeURIComponent($(location).attr('href').split("//")[1]);
@@ -113,8 +97,8 @@ function fetchComments(url) {
     // calling the api
     $.ajax({
         cache:false,
-        url: "0.0.0.0:5080/getComments" + url,
-        type:'post',
+        url: "http://icsas.herokuapp.com/getComments/" + url,
+        type:'get',
         success : function(response) {
             return response;
         }
@@ -125,7 +109,7 @@ function postComment() {
     if (getLoginStatus() == "SUCCESS") {
         $.ajax({
             cache:false,
-            url: "0.0.0.0:5080/postComments",
+            url: "http://icsas.herokuapp.com/postComments",
             type:'post',
             data: {url : getCurrentURL(), comment : ""/*pick from selector*/, "user" : ""/*pick from selector*/},
             success : function(response) {
@@ -134,3 +118,19 @@ function postComment() {
         });
     }
 }
+
+function init(){
+
+    //Adding generic divs to all paragraphs on page load
+    $("p").each(function(){
+        $(this).after("<div class='notes-list'><ul></ul></div>");
+        $(this).after("<button class='notes-button'>Comment</button>");
+    });
+
+    populateCommentsOnLoad();
+    loadFacebookSDK();
+}
+
+$(function(){
+    init();
+});
