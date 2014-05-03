@@ -60,7 +60,19 @@ function getCurrentURL(){
 }
 
 function populateComment(paraNumber, user, comment){
-    $(".notes-list-" + paraNumber).find("ul").append("<li><img class='circular' src='http://graph.facebook.com/" + user + "/picture'></img> " + comment + "</li>");
+    var name = '';
+    $.ajax({
+        async: false,
+        cache: true,
+        url: "http://graph.facebook.com/" + user,
+        type: 'GET',
+        dataType: "json",
+        success: function (data, status) {
+            name = data.first_name;
+        }
+    });
+
+    $(".notes-list-" + paraNumber).find("ul").append("<li><img class='circular' src='http://graph.facebook.com/" + user + "/picture'></img> <strong>" + name + "</strong> : " + comment + "</li>");
 
     var $this = $(".notes-list-" + paraNumber).not(".cluetip-inner .notes-list-" + paraNumber);
     var count = $($this).find("li").size();
@@ -163,7 +175,7 @@ function sendComment(index) {
 
 function commentify(input, index) {
     input.before("<div class=\"notes-marker no-user-select notes-hasnotes\" index = \"" + index + "\" style=\"position: relative; z-index: 597; float: right;\">" +
-                    "<a id=\"" + index + "\" href=\".notes-list-" + index + "\" rel=\".notes-list-" + index + "\">" +
+                    "<a id=\"" + index + "\" href=\"javascript:void(0)\" rel=\".notes-list-" + index + "\">" +
                         "<span class=\"notes-marker-icon icons icons-notes\"></span>" +
                         "<span class=\"notes-marker-count\">0</span>" +
                     "</a>" +

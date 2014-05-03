@@ -140,3 +140,7 @@ content: "\e036";
     width: auto;
     float: left;
 }
+
+.notes-active .notes-marker-icon, .notes-marker:hover .notes-marker-icon, .notes-list-visible .notes-active .notes-marker-icon {
+    color: #57ad68
+}
