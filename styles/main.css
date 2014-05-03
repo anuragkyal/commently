@@ -66,6 +66,12 @@ overflow: hidden;
 content: "\e036";
 }
 
+.circular {
+    border-radius: 50px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;

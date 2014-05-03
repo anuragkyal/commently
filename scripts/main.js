@@ -60,7 +60,7 @@ function getCurrentURL(){
 }
 
 function populateComment(paraNumber, user, comment){
-    $(".notes-list-" + paraNumber).find("ul").append("<li><img src='http://graph.facebook.com/" + user + "/picture'></img> " + comment + "</li>");
+    $(".notes-list-" + paraNumber).find("ul").append("<li><img class='circular' src='http://graph.facebook.com/" + user + "/picture'></img> " + comment + "</li>");
 
     var $this = $(".notes-list-" + paraNumber);
     var count = $($this).find("li").size();
@@ -158,7 +158,7 @@ function hideAllComments(){
 }
 
 function sendComment(index) {
-    var comment = $(".notes-list-" + index).find("input").val();
+    var comment = $(".cluetip-outer").find("input").val();
     postComment(comment, index);
 }
 
@@ -197,7 +197,7 @@ function initClueTip() {
 
 function init(){
     //Adding generic divs to all paragraphs on page load
-    $("p").each(function(index){
+    $("section.article-content p").each(function(index){
         commentify($(this), index);
     });
 
