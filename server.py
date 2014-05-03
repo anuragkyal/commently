@@ -1,6 +1,6 @@
 __author__ = 'soumyakanti'
 
-from flask import Flask
+from flask import Flask, request
 from pymongo import MongoClient
 import json
 from crossdomain import crossdomain
@@ -28,6 +28,20 @@ def get_comments_url(url):
             "para": comment["para"]
         })
     return json.dumps(comments_array)
+
+@app.route('/postComments', methods=['POST', 'OPTIONS'])
+@crossdomain(origin='*')
+def post_comment():
+    if request.method == 'POST':
+        comments.insert({
+            "comment": request.form['comment'],
+            "user": request.form['user'],
+            "para": request.form['para'],
+            "url": request.form['url']
+        })
+        return 'SUCCESS'
+    else:
+        return 'FAILURE'
 
 if __name__ == '__main__':
     app.run()

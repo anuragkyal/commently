@@ -111,9 +111,10 @@ function postComment() {
             cache:false,
             url: "http://icsas.herokuapp.com/postComments",
             type:'post',
-            data: {url : getCurrentURL(), comment : ""/*pick from selector*/, "user" : ""/*pick from selector*/},
+            data: {url : getCurrentURL(), comment : ""/*pick from selector*/, "user" : ""/*pick from selector*/, "para": "" /*TODO:Populate this*/},
             success : function(response) {
                 return response;
+                // Expected - 'SUCCESS' for success, else 'FAILURE'
             }
         });
     }
