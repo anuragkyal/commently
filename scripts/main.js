@@ -174,7 +174,6 @@ function commentify(input, index) {
 
 function initClueTip() {
     $(".notes-marker").each(function () {
-        console.log($(this).find('a'));
         $(this).find('a').cluetip({
             cluetipClass: 'jtip',
             arrows: true,

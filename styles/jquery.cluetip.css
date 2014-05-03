@@ -87,7 +87,7 @@ div.cluetip-default .cluetip-arrows {
   background: transparent none;
 }
 div.clue-right-default .cluetip-arrows {
-  background-image: url(//images/darrowleft.gif);
+  background-image: url(/images/darrowleft.gif);
 }
 div.clue-left-default .cluetip-arrows {
   background-image: url(/images/darrowright.gif);
