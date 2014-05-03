@@ -16,7 +16,7 @@ comments = db.comments
 def hello_world():
     return 'Hello World!'
 
-@app.route('/getcomments/<string:url>')
+@app.route('/getComments/<string:url>')
 @crossdomain(origin='*')
 def get_comments_url(url):
     comments_pointer = comments.find({"url": url})
