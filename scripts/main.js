@@ -62,7 +62,7 @@ function getCurrentURL(){
 function populateComment(paraNumber, user, comment){
     $(".notes-list-" + paraNumber).find("ul").append("<li><img class='circular' src='http://graph.facebook.com/" + user + "/picture'></img> " + comment + "</li>");
 
-    var $this = $(".notes-list-" + paraNumber);
+    var $this = $(".notes-list-" + paraNumber).not(".cluetip-inner .notes-list-" + paraNumber);
     var count = $($this).find("li").size();
     $(".notes-marker[index=\'" + $($this).attr('index') + "\']").find(".notes-marker-count").text(count > 0 ? count : "+");
 }
@@ -89,7 +89,7 @@ function populateComments(commentList){
         var commentInfoMap = commentList[i];
         populateComment(parseInt(commentInfoMap.para), commentInfoMap.user, commentInfoMap.comment);
     }
-    $(".notes-list").each(function() {
+    $(".notes-list").not(".cluetip-inner .notes-list").each(function() {
         var count = $(this).find("li").size();
         $(".notes-marker[index=\'" + $(this).attr('index') + "\']").find(".notes-marker-count").text(count > 0 ? count : "+");
     });
@@ -122,7 +122,6 @@ function postComment(comment, para) {
             data: {url : getCurrentURL(), comment : comment, user : userId, para: para},
             success : function(response) {
                 if (response == 'SUCCESS') {
-                    // TODO: CSS ninja, please populate user from fb.
                     populateComment(para, userId, comment);
                     $(".notes-list-" + para).find("input").val("");
                 }
