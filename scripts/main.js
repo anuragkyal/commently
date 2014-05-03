@@ -194,6 +194,16 @@ function initClueTip() {
     });
 }
 
+function bindParaHover(){
+    $("p").each(function(index){
+        $(this).hover(function(){
+            $(".notes-marker[index = '" + index + "']").addClass("notes-active");
+        },function(){
+            $(".notes-marker[index = '" + index + "']").removeClass("notes-active");
+        });
+    });
+}
+
 function init(){
     //Adding generic divs to all paragraphs on page load
     $("section.article-content p").each(function(index){
@@ -205,6 +215,7 @@ function init(){
     initClueTip();
     loadFacebookSDK();
     bindCommentButtonClick();
+    bindParaHover();
 }
 
 $(function(){
