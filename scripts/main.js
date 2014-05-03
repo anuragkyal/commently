@@ -165,7 +165,7 @@ function sendComment(index) {
 function commentify(input, index) {
     input.before("<div class=\"notes-marker no-user-select notes-hasnotes\" index = \"" + index + "\" style=\"position: relative; z-index: 597; float: right;\">" +
                     "<span class=\"notes-marker-icon icons icons-notes\">" +
-                        "<a href=\"#\" rel=\".notes-list-" + index + "\"/>" +
+                        "<a href=\".notes-list-" + index + "\" rel=\".notes-list-" + index + "\"/>" +
                     "</span>" +
                     "<span class=\"notes-marker-count\">0</span>" +
                  "</div>");
@@ -174,7 +174,7 @@ function commentify(input, index) {
 
 function initClueTip() {
     $(".notes-marker").each(function () {
-        $(this).find('a').cluetip({ arrows: true, dropShadow: false, local: true,
+        $(this).find('a').cluetip({cluetipClass: 'jtip', arrows: true, dropShadow: false, local: true,
             fx: {
                 open: 'slideDown',
                 openSpeed: 'slow'
