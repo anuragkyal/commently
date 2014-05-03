@@ -1,0 +1,31 @@
+JS
+function getCurrentUrl()
+- get the current url
+- returns url as a string
+
+function setComments(paranumber, comments)
+- populate the comments by editing DOM on the specific paranumber
+- return nothing
+
+function getComments(url)
+- get all the comments from a particular url
+- comments {
+comment: string,
+user: twitter_id,
+url : string,
+para_number : int
+}
+- returns list of comments
+
+function postComment(comment, para_number, url)
+- post the comments to server
+- returns result (fail or success)
+
+Flask
+function getComments(url)
+- returns all associated comments as json
+
+function postComment(url, comment, paranumber, user)
+- adds it to db
+
+Create a heroku app that will be pushed directly from bitbucket repo // codeship?
