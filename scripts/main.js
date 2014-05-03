@@ -74,8 +74,9 @@ function fetchComments(url) {
     $.ajax({
         async: false,
         cache:false,
-        url: "http://icsas.herokuapp.com/getComments/" + url,
-        type:'get',
+        url: "http://icsas.herokuapp.com/getComments",
+        data: {url : url},
+        type: 'POST',
         dataType: "json",
         success : function(response) {
             commentList = response;

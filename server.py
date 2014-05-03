@@ -17,18 +17,21 @@ comments = db.comments
 def hello_world():
     return 'Hello World!'
 
-@app.route('/getComments/<string:url>')
+@app.route('/getComments', methods=['POST', 'OPTIONS'])
 @crossdomain(origin='*')
-def get_comments_url(url):
-    comments_pointer = comments.find({"url": url})
-    comments_array = []
-    for comment in comments_pointer:
-        comments_array.append({
-            "comment": comment["comment"],
-            "user": comment["user"],
-            "para": comment["para"]
-        })
-    return json.dumps(comments_array)
+def get_comments_url():
+    if request.method == 'POST':
+        comments_pointer = comments.find({"url": urllib.unquote(request.form['url']).decode('utf-8')})
+        comments_array = []
+        for comment in comments_pointer:
+            comments_array.append({
+                "comment": comment["comment"],
+                "user": comment["user"],
+                "para": comment["para"]
+            })
+        return json.dumps(comments_array)
+    else:
+        return json.dumps([])
 
 @app.route('/postComments', methods=['POST', 'OPTIONS'])
 @crossdomain(origin='*')
