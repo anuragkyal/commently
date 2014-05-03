@@ -1,6 +1,6 @@
 __author__ = 'soumyakanti'
 
-from flask import Flask, request
+from flask import Flask, request, send_from_directory
 from pymongo import MongoClient
 import json
 import urllib
@@ -46,6 +46,18 @@ def post_comment():
         return 'SUCCESS'
     else:
         return 'FAILURE'
+
+@app.route('/scripts/<path:filename>')
+def send_scripts(filename):
+    return send_from_directory('scripts', filename)
+
+@app.route('/images/<path:filename>')
+def send_images(filename):
+    return send_from_directory('images', filename)
+
+@app.route('/styles/<path:filename>')
+def send_styles(filename):
+    return send_from_directory('styles', filename)
 
 if __name__ == '__main__':
     app.run()
