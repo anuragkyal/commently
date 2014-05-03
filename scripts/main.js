@@ -85,6 +85,10 @@ function populateComments(commentList){
         var commentInfoMap = commentList[i];
         populateComment(parseInt(commentInfoMap.para), commentInfoMap.user, commentInfoMap.comment);
     }
+    $(".notes-list").each(function() {
+        var count = $(this).find("li").size();
+        $(".notes-marker[index=\'" + $(this).attr('index') + "\']").find(".notes-marker-count").text(count > 0 ? count : "+");
+    });
 }
 
 function populateCommentsOnLoad(){
@@ -146,9 +150,25 @@ function hideAllComments(){
 }
 
 function commentify(input, index) {
-    input.before("<div class=\"notes-marker no-user-select notes-hasnotes\" index = \"" + index + "\" style=\"position: relative; z-index: 597; float: right;\"><span class=\"notes-marker-icon icons icons-notes\"></span><span class=\"notes-marker-count\">2</span></div>");
+    input.before("<div class=\"notes-marker no-user-select notes-hasnotes\" index = \"" + index + "\" style=\"position: relative; z-index: 597; float: right;\">" +
+                    "<span class=\"notes-marker-icon icons icons-notes\">" +
+                        "<a href=\"#\" rel=\".notes-list-" + index + "\"/>" +
+                    "</span>" +
+                    "<span class=\"notes-marker-count\">0</span>" +
+                 "</div>");
     input.after("<div class='notes-list notes-list-" + index + " dontshow' index = '" +index + "'><ul></ul></div>");
 
+}
+
+function initClueTip() {
+    $(".notes-marker").each(function () {
+        $(this).find('a').cluetip({ arrows: true, dropShadow: false, local: true,
+            fx: {
+                open: 'slideDown',
+                openSpeed: 'slow'
+            }
+        });
+    });
 }
 
 function init(){
@@ -159,6 +179,7 @@ function init(){
 
     hideAllComments();
     populateCommentsOnLoad();
+    initClueTip();
     loadFacebookSDK();
     bindCommentButtonClick();
 }
