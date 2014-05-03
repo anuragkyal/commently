@@ -164,17 +164,27 @@ function sendComment(index) {
 
 function commentify(input, index) {
     input.before("<div class=\"notes-marker no-user-select notes-hasnotes\" index = \"" + index + "\" style=\"position: relative; z-index: 597; float: right;\">" +
-                    "<span class=\"notes-marker-icon icons icons-notes\">" +
-                        "<a href=\".notes-list-" + index + "\" rel=\".notes-list-" + index + "\"/>" +
-                    "</span>" +
-                    "<span class=\"notes-marker-count\">0</span>" +
+                    "<a id=\"" + index + "\" href=\".notes-list-" + index + "\" rel=\".notes-list-" + index + "\">" +
+                        "<span class=\"notes-marker-icon icons icons-notes\"></span>" +
+                        "<span class=\"notes-marker-count\">0</span>" +
+                    "</a>" +
                  "</div>");
     input.after("<div class='notes-list notes-list-" + index + " dontshow' index = '" +index + "'><ul></ul><div><input type='text'></input><button onclick='sendComment(" + index +")'>Comment</button></div></div>");
 }
 
 function initClueTip() {
     $(".notes-marker").each(function () {
-        $(this).find('a').cluetip({cluetipClass: 'jtip', arrows: true, dropShadow: false, local: true,
+        console.log($(this).find('a'));
+        $(this).find('a').cluetip({
+            cluetipClass: 'jtip',
+            arrows: true,
+            dropShadow: false,
+            hoverIntent: false,
+            sticky: true,
+            mouseOutClose: true,
+            local :true,
+            closePosition: 'title',
+            closeText: '<img src="http://icsas.herokuapp.com/images/cross.png" alt="close" />',
             fx: {
                 open: 'slideDown',
                 openSpeed: 'slow'

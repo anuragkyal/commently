@@ -271,7 +271,6 @@
 
 //activate clueTip
     var activate = function(event) {
-            console.log("ASDASDASD");
       var pY, ajaxMergedSettings, cacheKey,
           continueOn = opts.onActivate.call(link, event);
 
@@ -479,9 +478,7 @@
 * load an element from the same page
 ***************************************/
       else if (opts.local) {
-          console.log("ASDASDASDASDASDAS");
         var $localContent = $(tipAttribute + (/^#\S+$/.test(tipAttribute) ? '' : ':eq(' + index + ')')).clone(true).show();
-        console.log($localContent);
         if (opts.localIdSuffix) {
           $localContent.attr('id', $localContent[0].id + opts.localIdSuffix);
         }
