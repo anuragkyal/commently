@@ -120,16 +120,42 @@ function postComment() {
     }
 }
 
+function bindCommentButtonClick(){
+
+    $(".notes-comment-button").each(function(){
+        $(this).click(function(){
+            var buttonIndex = $(this).attr("index");
+            showElement($(".notes-list-" + buttonIndex));
+        });
+    });
+}
+
+function showElement(element){
+    $(element).attr("style", "");
+}
+
+function hideElement(element){
+    $(element).attr("style", "display:none!important;");
+}
+
+function hideAllComments(){
+    $(".notes-list").each(function(){
+        hideElement($(this));
+    });
+}
+
 function init(){
 
     //Adding generic divs to all paragraphs on page load
-    $("p").each(function(){
-        $(this).after("<div class='notes-list'><ul></ul></div>");
-        $(this).after("<button class='notes-button'>Comment</button>");
+    $("p").each(function(index){
+        $(this).after("<div class='notes-list notes-list-" + index + " {para:" + index + "} dontshow'><ul></ul></div>");
+        $(this).after("<button class='notes-comment-button {para:" + index + "}' index='" + index + "'>Comment</button>");
     });
 
+    hideAllComments();
     populateCommentsOnLoad();
     loadFacebookSDK();
+    bindCommentButtonClick();
 }
 
 $(function(){
