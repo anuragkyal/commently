@@ -23,35 +23,30 @@ function loadFacebookSDK() {
     }(document));
 }
 
-function loadProfileFromFacebook(response) {
+/*function loadProfileFromFacebook(response) {
     FB.api('/me?fields=name,email', function(response) {
-        if (($("[name='reviewer.email']").val() == undefined || $("[name='reviewer.email']").val() == '')) {
-            $("[name='reviewer.email']").attr('value', response.email);
-            $("[name='reviewer.firstName']").attr('value', response.first_name);
-            $("[name='reviewer.lastName']").attr('value', response.last_name);
-            $("[name='reviewer.password']").attr('value', response.id);
-            $("[name='reviewer.customerType']").attr('value', 'FACEBOOK');
-        }
+        return response.id
     });
-}
+}*/
 
 function getLoginStatus() {
+    var result = "FAILURE";
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
-            loadProfileFromFacebook(response);
-            return "SUCCESS";
+            //console.log(response.authResponse.userID);
+            result = "SUCCESS";
         } else {
             FB.login(function(response) {
                 if (response.authResponse) {
                     FB.api('/me/permissions', function(response) {
                     });
-                    loadProfileFromFacebook(response);
-                    return "SUCCESS";
+                    //console.log(response.authResponse.userID);
+                    result = "SUCCESS";
                 }
             }, {scope:'email, user_about_me, user_birthday, user_location'});
         }
-
     });
+    return result;
 }
 
 
