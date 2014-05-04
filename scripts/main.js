@@ -200,13 +200,14 @@ function initClueTip() {
                 openSpeed: 'slow'
             },
             showTitle: false,
-            positionBy: 'fixed'
+            positionBy: 'fixed',
+            activation: 'click'
         });
     });
 }
 
 function bindParaHover(){
-    $("p").each(function(index){
+    $("section.article-content p").each(function(index){
         $(this).hover(function(){
             $(".notes-marker[index = '" + index + "']").addClass("notes-active");
         },function(){

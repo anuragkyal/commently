@@ -144,3 +144,7 @@ content: "\e036";
 .notes-active .notes-marker-icon, .notes-marker:hover .notes-marker-icon, .notes-list-visible .notes-active .notes-marker-icon {
     color: #57ad68
 }
+
+.notes-list div{
+    padding-top: 10px;
+}
