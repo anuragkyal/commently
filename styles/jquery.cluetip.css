@@ -124,7 +124,7 @@ div.clue-bottom-default .cluetip-arrows {
 }
 
 .cluetip-jtip .cluetip-inner {
-  padding-top: 0px;
+  padding-top: 4px;
 }
 .cluetip-jtip div.cluetip-close {
   text-align: right;

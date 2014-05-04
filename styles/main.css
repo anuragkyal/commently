@@ -120,13 +120,13 @@ content: "\e036";
     transition: top .1s
 }
 
+.notes-list ul{
+    margin: 0px;
+}
+
 .notes-list ul li{
     font-size:12px;
     list-style: none;
-}
-
-.notes-list div{
-    padding-top: 25px;
 }
 
 .notes-list button{
