@@ -197,11 +197,12 @@ function initClueTip() {
             closeText: '<img src="http://icsas.herokuapp.com/images/cross.png" alt="close" />',
             fx: {
                 open: 'slideDown',
-                openSpeed: 'slow'
+                openSpeed: 'fast'
             },
             showTitle: false,
             positionBy: 'fixed',
-            activation: 'click'
+            activation: 'click',
+            delayedClose: 10
         });
     });
 }
