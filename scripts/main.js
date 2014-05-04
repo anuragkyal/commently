@@ -31,26 +31,22 @@ function loadFacebookSDK() {
     });
 }*/
 
-function getLoginStatus() {
-    var result = "FAILURE";
+function checkLoginStatusAndPost(comment, index) {
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
-            //console.log(response.authResponse.userID);
             userId = response.authResponse.userID;
-            result = "SUCCESS";
+            postComment(comment, index);
         } else {
             FB.login(function(response) {
                 if (response.authResponse) {
                     FB.api('/me/permissions', function(response) {
                     });
-                    //console.log(response.authResponse.userID);
-                    userId = response.authResponse.userID;
-                    result = "SUCCESS";
+                     userId = response.authResponse.userID;
+                     postComment(comment, index);
                 }
             }, {scope:'email, user_about_me, user_birthday, user_location'});
         }
     });
-    return result;
 }
 
 
@@ -126,22 +122,20 @@ function populateCommentsOnLoad(){
  }*/
 
 function postComment(comment, para) {
-    if (getLoginStatus() == "SUCCESS") {
-        $.ajax({
-            cache:false,
-            url: "http://icsas.herokuapp.com/postComments",
-            type:'POST',
-            data: {url : getCurrentURL(), comment : comment, user : userId, para: para},
-            success : function(response) {
-                if (response == 'SUCCESS') {
-                    populateComment(para, userId, comment);
-                    $(".notes-list-" + para).find("input").val("");
-                }
-                return response;
-                // Expected - 'SUCCESS' for success, else 'FAILURE'
+    $.ajax({
+        cache:false,
+        url: "http://icsas.herokuapp.com/postComments",
+        type:'POST',
+        data: {url : getCurrentURL(), comment : comment, user : userId, para: para},
+        success : function(response) {
+            if (response == 'SUCCESS') {
+                populateComment(para, userId, comment);
+                $(".notes-list-" + para).find("input").val("");
             }
-        });
-    }
+            return response;
+            // Expected - 'SUCCESS' for success, else 'FAILURE'
+        }
+    });
 }
 
 function bindCommentButtonClick(){
@@ -170,7 +164,7 @@ function hideAllComments(){
 
 function sendComment(index) {
     var comment = $(".cluetip-outer").find("input").val();
-    postComment(comment, index);
+    checkLoginStatusAndPost(comment, index);
 }
 
 function commentify(input, index) {
