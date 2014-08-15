@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://mashable.com/2011/11/18/follow-mashable/ -->
+<html data-env="production" lang="en" xml:lang="en" class=" js flexbox flexboxlegacy canvas canvastext no-touch postmessage hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache overthrow-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Follow Mashable on Email, RSS & Social Media_files/slim_v05.js"></script><script src="./Follow Mashable on Email, RSS & Social Media_files/cb=gapi.loaded_2" async=""></script><script src="./Follow Mashable on Email, RSS & Social Media_files/mashable.com"></script>
+<script src="./Follow Mashable on Email, RSS & Social Media_files/cb=gapi.loaded_1" async=""></script><script src="./Follow Mashable on Email, RSS & Social Media_files/cb=gapi.loaded_0" async=""></script><script id="www-widgetapi-script" src="./Follow Mashable on Email, RSS & Social Media_files/www-widgetapi-vflkfgkJ8.js" async=""></script><script src="./Follow Mashable on Email, RSS & Social Media_files/iframe_api"></script><script id="gplusapi_jssdk" async="" src="./Follow Mashable on Email, RSS & Social Media_files/client-plusone.js" gapi_processed="true"></script><script id="parsely" async="" src="./Follow Mashable on Email, RSS & Social Media_files/p.js"></script><script id="comscore" async="" src="./Follow Mashable on Email, RSS & Social Media_files/beacon.js"></script><script id="ga" async="" src="./Follow Mashable on Email, RSS & Social Media_files/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","errorBeacon":"jserror.newrelic.com","licenseKey":"faaaef6476","applicationID":"1135420","transactionName":"cAkNR0ENXQpXF0tJDUASEBxACl4R","queueTime":0,"applicationTime":127,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-400.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwYHUF9ACQIDUVVQBw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,o,a,u){return s?s-=1:n("err",[u||new UncaughtException(t,e,o)]),"function"==typeof i?i.apply(this,r(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}var n=t("handle"),r=t(6),o=t(5),i=window.onerror,a=!1,s=0;t("loader").features.push("err"),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),a=!0)}o.on("fn-start",function(){a&&(s+=1)}),o.on("fn-err",function(t,e,r){a&&(this.thrown=!0,n("err",[r,(new Date).getTime()]))}),o.on("fn-end",function(){a&&!this.thrown&&s>0&&(s-=1)}),o.on("internal-error",function(t){n("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);return i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1),n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,p=e(d);if(p&&(r.rxSize=p),this.sameOrigin){var f=t.getResponseHeader("X-NewRelic-App-Data");f&&(n.cat=f.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){a.emit("internal-error",e)}};for(var p=0;u>p;p++)n.addEventListener(s[p],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=c.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID){c.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=c.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",p="attachEvent",f=(""+location).split("?")[0],c=e.exports={offset:i(),origin:f,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[p]("onreadystatechange",r),s[p]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,n,r){function nrWrapper(){try{var a,u=s(arguments),d=this,p=n&&n(u,d)||{}}catch(f){i([f,"",[u,d,r],p])}o(e+"start",[u,d,r],p);try{return a=t.apply(d,u)}catch(c){throw o(e+"err",[u,d,c],p),c}finally{o(e+"end",[u,d,a],p)}}return t&&"function"==typeof t&&t.apply&&!t._wrapped?(e||(e=""),nrWrapper._wrapped=!0,nrWrapper):t}function r(t,e,r,o){r||(r="");var i,a,s,u="-"===r.charAt(0);for(s=0;s<e.length;s++)a=e[s],i=t[a],i&&"function"==typeof i&&i.apply&&!i._wrapped&&(t[a]=n(i,u?a+r:r,o,a,t))}function o(t,e,n){try{a.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{a.emit("internal-error",t)}catch(e){}}var a=t(1),s=t(2);e.exports=n,n.inPlace=r},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<script>
+  window.__o = {"channel":"social-media","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":21424.5,"h_buy":null,"h_pub_buy":null,"v_cur":0.0,"v_max":0.0,"v_cur_i":0,"v_max_i":0,"events":"event51,event61","top_channel":"social-media","content_source_type":"Internal","content_source_name":"Internal","author_name":"Meghan Peters","age":"892","pub_day":18,"pub_month":11,"pub_year":2011,"pub_date":"11/18/2011","isPostView":true,"post_lead_type":"Default","topics":"community,How To,Mashable,Social Media,Uncategorized","campaign":null,"display_mode":null};
+  window._gaq = window._gaq || [];
+  window._gaq.push(['_setAccount', 'UA-92124-1']);
+</script>
+<title>Follow Mashable on Email, RSS &amp; Social Media</title>
+<link href="./Follow Mashable on Email, RSS & Social Media_files/app-00755bcd5edb0e6a38fae3c79e86bbd2.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./Follow Mashable on Email, RSS & Social Media_files/posts-26897827edf39568a4e83a3d85d38b2c.css" media="all" rel="stylesheet" type="text/css">
+<!--[if lte IE 8]>
+<link href="http://rack.3.mshcdn.com/assets/iehax-957092b11e263c6b850533d06d5aaa2c.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<meta content="no" name="apple-mobile-web-app-capable">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://plus.google.com/113493854651753327245" rel="publisher">
+<link href="http://feeds.mashable.com/Mashable" rel="alternate" title="Mashable" type="application/rss+xml">
+<link href="http://rack.1.mshcdn.com/assets/favicon-007eef4a606e98f0934d0af984b76203.png" rel="icon" type="image/png">
+<meta content="mid:12105681" name="linkedin:owner">
+<meta content="122071082108" property="fb:app_id">
+<meta content="18807449704" property="fb:page_id">
+<meta content="nYmtX7H2sSCkK8gHpQGxr7Es2526DgUaqb6PGYSX" name="readability-verification">
+<link href="http://rack.2.mshcdn.com/assets/mashable.touchicon-e352d67245bfc87a994db28c16cf732f.png" rel="apple-touch-icon-precomposed">
+
+<link data-page-subject="true" href="./Follow Mashable on Email, RSS & Social Media_files/Follow Mashable on Email, RSS & Social Media.html" rel="canonical"><link data-page-subject="true" href="http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e769f71b/189/Mashable-Team-GO-11.jpg" rel="image_src"><meta content="http://mashable.com/2011/11/18/follow-mashable/" data-page-subject="true" property="og:url"><meta content="Follow Mashable on Email, RSS &amp; Social Media" data-page-subject="true" property="og:title"><meta content="article" data-page-subject="true" property="og:type"><meta content="Mashable" data-page-subject="true" property="og:site_name"><meta content="Connect with Mashable staff and content on Facebook, Twitter, Google+, email, RSS and more." data-page-subject="true" property="og:description"><meta content="http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e769f71b/189/Mashable-Team-GO-11.jpg" data-page-subject="true" property="og:image"><meta content="2011-11-18T17:58:49Z" data-page-subject="true" property="og:article:published_time"><meta content="2013-11-05T21:41:15Z" data-page-subject="true" property="og:article:modified_time"><meta content="https://www.facebook.com/mashable" data-page-subject="true" property="og:article:publisher"><meta content="Connect with Mashable staff and content on Facebook, Twitter, Google+, email, RSS and more." data-page-subject="true" name="description"><meta content="mashable, community, uncategorized, social-media, how-to" data-page-subject="true" name="keywords"><meta content="How to Connect With Mashable via Email, RSS and Social Media" data-page-subject="true" name="twitter:title"><meta content="Mashable has grown immensely since its humble beginnings in 2006. As we continue to move from a niche blog to a full-fledged news site, the topics we cover and the ways readers connect with us are cha..." data-page-subject="true" name="twitter:description"><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/b5609917/189/Mashable-Team-GO-11.jpg" data-page-subject="true" name="twitter:image"><meta content="@mashable" data-page-subject="true" name="twitter:site"><meta content="http://mashable.com/2011/11/18/follow-mashable/" data-page-subject="true" name="twitter:url"><meta content="@mashable" data-page-subject="true" name="twitter:creator"><meta content="photo" data-page-subject="true" name="twitter:card"><meta content="560" data-page-subject="true" name="twitter:image:width"><meta content="750" data-page-subject="true" name="twitter:image:height"><meta content="2011-11-18 17:58:49 UTC" data-page-subject="true" name="date"><meta content="Meghan Peters" data-page-subject="true" name="sailthru.author"><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/6b9c9a18/189/Mashable-Team-GO-11.jpg" data-page-subject="true" name="sailthru.image.thumb"><meta content="http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/ea570747/189/Mashable-Team-GO-11.jpg" data-page-subject="true" name="sailthru.image.full"><meta content="http://rack.0.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/249a6053/189/Mashable-Team-GO-11.jpg" data-page-subject="true" name="sailthru.lead_image"><meta content="http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/4cd20767/189/Mashable-Team-GO-11.jpg" data-page-subject="true" name="sailthru.secondary_image"><meta content="http://on.mash.to/uQvbzE" data-page-subject="true" name="short_url"><meta name="parsely-page" content="{&quot;title&quot;:&quot;Follow Mashable on Email, RSS &amp; Social Media&quot;,&quot;link&quot;:&quot;http://mashable.com/2011/11/18/follow-mashable/&quot;,&quot;image_url&quot;:&quot;http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e769f71b/189/Mashable-Team-GO-11.jpg&quot;,&quot;type&quot;:&quot;post&quot;,&quot;post_id&quot;:732597,&quot;pub_date&quot;:&quot;2011-11-18T17:58:49Z&quot;,&quot;section&quot;:&quot;social-media&quot;,&quot;author&quot;:&quot;Meghan Peters&quot;,&quot;tags&quot;:[&quot;Internal&quot;,&quot;Internal - Internal&quot;,&quot;Topics - community&quot;,&quot;Topics - How To&quot;,&quot;Topics - Mashable&quot;,&quot;Topics - Social Media&quot;,&quot;Topics - Uncategorized&quot;]}" data-page-subject="true">
+
+<script src="./Follow Mashable on Email, RSS & Social Media_files/app-66b579b71963beaac99103a1abf255a7.js" type="text/javascript"></script><style type="text/css"></style>
+<!--[if lte IE 8]>
+<script src="http://rack.2.mshcdn.com/assets/polyfill-6620db93ad92c8f787391361dfe3f23c.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script></head>
+<link rel="stylesheet" type="text/css" href="./styles/jquery.cluetip.css">
+<link rel="stylesheet" type="text/css" href="./styles/main.css">
+<script src="./scripts/jquery.cluetip.js" async=""></script>
+<script src="./scripts/main.js" async=""></script>
+<body class="body_posts body_show" data-jsid="posts/show" data-postid="732597" data-sec0="socmed" data-sec1="howto" data-sec2="posts" viewport="fixed">
+<h1 class="semantic">Mashable</h1>
+<header id="flyout-container" style="display: none;"><ul class="main-menu nav flyout">
+<li class="menu"><a class="icon-reorder" href="http://mashable.com/2011/11/18/follow-mashable/#"></a></li>
+<li class="logo"><a class="brand" data-turbo-target="body-container" href="http://mashable.com/"><span>Mashable</span><img alt="Header_logo.v2" src="./Follow Mashable on Email, RSS & Social Media_files/header_logo.v2-30574d105ad07318345ec8f1a85a3efa.png"></a></li>
+<li class="submenu collapsable pull-right" id="sign-in"><a href="http://mashable.com/login/"><span>Sign in</span></a></li>
+<li class="follow submenu pull-right"><a class="follow-trigger" href="./Follow Mashable on Email, RSS & Social Media_files/Follow Mashable on Email, RSS & Social Media.html"><span class="fb"></span>
+<span class="tw"></span>
+<span class="gp"></span></a>
+<div class="submenu-content">
+<div class="page-container">
+<div class="pull-right follow">
+<a class="social-stub social-share facebook like" data-default="1" data-href="http://facebook.com/mashable" data-shares="1.7m">Like</a>
+<a class="twitter-follow-button" data-dnt="true" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/mashable">
+Follow @mashable
+</a>
+<div id="___follow_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 108px; height: 20px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 108px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1399115096616" name="I0_1399115096616" src="./Follow Mashable on Email, RSS & Social Media_files/follow.html" data-gapiattached="true"></iframe></div>
+<a alt="RSS Feed" class="rss" href="http://feeds.mashable.com/Mashable" title="RSS Feed"></a>
+<a alt="Email Subscriptions" class="email" href="http://mashable.com/subscriptions" title="Email Subscriptions"></a>
+<div class="more">
+<a href="./Follow Mashable on Email, RSS & Social Media_files/Follow Mashable on Email, RSS & Social Media.html">see more&nbsp;&nbsp;&gt;</a></div>
+</div>
+</div>
+</div></li>
+<li class="nav-search submenu pull-right"><a class="search-trigger" href="http://mashable.com/search/">Search</a>
+<div class="dropdown-content">
+<div class="page-container">
+<div class="header-search-form">
+<form accept-charset="UTF-8" action="http://mashable.com/search/" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+<div class="ie-search-wrapper"><input autocomplete="off" class="header-search" id="q" name="q" type="text" value=""></div>
+<input class="btn btn-primary header-search-submit" name="commit" type="submit" value="Search"></form><div class="header-search-results"></div>
+</div>
+</div>
+</div></li>
+<li class="collapsable" data-tags=""><a href="http://mashable.com/category/must-reads">Must Reads</a></li>
+<li class="collapsable channel submenu" data-tags="how-to,facebook,twitter,youtube,google-plus"><a href="http://mashable.com/social-media/">Social Media</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="apps-software,dev-design,gadgets,mobile"><a href="http://mashable.com/tech/">Tech</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="advertising,marketing,media,small-business,startups,jobs"><a href="http://mashable.com/business/">Business</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="film,gaming,music,sports,television"><a href="http://mashable.com/entertainment/">Entertainment</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="us,world,climate,space,politics,social-good"><a href="http://mashable.com/us-world/">US &amp; World</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="pics,memes,comics,conversations,videos-watercooler"><a href="http://mashable.com/watercooler/">Watercooler</a><div class="submenu-content"></div></li>
+<li class="collapsable" data-tags=""><a href="http://findjobs.mashable.com/">Jobs</a></li>
+<li class="submenu more"><a href="http://mashable.com/2011/11/18/follow-mashable/#"><!-- %span=t "header.nav.more" -->
+<span>More</span></a>
+<div class="submenu-content">
+<div class="page-container">
+<ul class="columns"><li><ul class="column-list"><li class="header">Channels</li>
+<li><a href="http://mashable.com/category/must-reads">Must Reads</a></li>
+<li><a href="http://mashable.com/social-media/">Social Media</a></li>
+<li><a href="http://mashable.com/tech/">Tech</a></li>
+<li><a href="http://mashable.com/business/">Business</a></li>
+<li><a href="http://mashable.com/entertainment/">Entertainment</a></li>
+<li><a href="http://mashable.com/us-world/">US &amp; World</a></li>
+<li><a href="http://mashable.com/watercooler/">Watercooler</a></li>
+<li><a href="http://findjobs.mashable.com/">Jobs</a></li></ul></li><li><ul class="column-list">
+<li class="header">Company</li><li><a href="http://mashable.com/about/">About Us</a></li><li><a href="http://www.wrightsmedia.com/sites/mashable/">Licensing &amp; Reprints</a></li><li><a href="http://mashable.com/2013/">Archive</a></li></ul></li><li><ul class="column-list">
+<li class="header">Contact</li><li><a href="http://mashable.com/contact-us/">Contact Us</a></li><li><a href="http://mashable.com/submit/">Submit News</a></li></ul></li><li><ul class="column-list">
+<li class="header">Advertise</li><li><a href="http://mashable.com/advertise/">Advertise</a></li></ul></li><li><ul class="column-list">
+<li class="header">Legal</li><li><a href="http://mashable.com/privacy/">Privacy Policy</a></li><li><a href="http://mashable.com/terms/">Terms of Use</a></li></ul></li><li><ul class="column-list">
+<li class="header">Apps</li><li><a href="http://itunes.apple.com/us/app/mashable/id356202138?mt=8">iPhone App</a></li><li><a href="http://itunes.apple.com/us/app/mashable-for-ipad/id370097986?mt=8">iPad App</a></li><li><a href="https://play.google.com/store/apps/details?id=com.mashable.android.phoenix">Android App</a></li></ul></li><li><ul class="column-list">
+<li class="header">Resources</li><li><a href="./Follow Mashable on Email, RSS & Social Media_files/Follow Mashable on Email, RSS & Social Media.html">Subscriptions</a></li></ul></li><li><ul class="column-list">
+<li class="header">Sites</li><li><a href="http://findjobs.mashable.com/">Jobs</a></li><li><a href="http://events.mashable.com/">Events</a></li><li><a href="http://mashable.com/sgs/">Social Good Summit</a></li><li><a href="http://mashable.com/media-summit/">Media Summit</a></li></ul></li></ul>
+</div>
+</div></li>
+</ul></header>
+<div id="peek">
+<div id="sticky">
+
+<header id="site-header"><div class="navbar">
+<div class="navbar-inner"><ul class="main-menu nav inline">
+<li class="menu"><a class="icon-reorder" href="http://mashable.com/2011/11/18/follow-mashable/#"></a></li>
+<li class="logo"><a class="brand" data-turbo-target="body-container" href="http://mashable.com/"><span>Mashable</span><img alt="Header_logo.v2" src="./Follow Mashable on Email, RSS & Social Media_files/header_logo.v2-30574d105ad07318345ec8f1a85a3efa.png"></a></li>
+<li class="submenu collapsable pull-right" id="sign-in"><a href="http://mashable.com/login/"><span>Sign in</span></a></li>
+<li class="follow submenu pull-right"><a class="follow-trigger" href="./Follow Mashable on Email, RSS & Social Media_files/Follow Mashable on Email, RSS & Social Media.html"><span class="fb"></span>
+<span class="tw"></span>
+<span class="gp"></span></a>
+<div class="submenu-content">
+<div class="page-container">
+<div class="pull-right follow">
+<a class="social-stub social-share facebook like" data-default="1" data-href="http://facebook.com/mashable" data-shares="1.7m">Like</a>
+<a class="twitter-follow-button" data-dnt="true" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/mashable">
+Follow @mashable
+</a>
+<div id="___follow_1" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 108px; height: 20px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 108px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I1_1399115096623" name="I1_1399115096623" src="./Follow Mashable on Email, RSS & Social Media_files/follow(1).html" data-gapiattached="true"></iframe></div>
+<a alt="RSS Feed" class="rss" href="http://feeds.mashable.com/Mashable" title="RSS Feed"></a>
+<a alt="Email Subscriptions" class="email" href="http://mashable.com/subscriptions" title="Email Subscriptions"></a>
+<div class="more">
+<a href="./Follow Mashable on Email, RSS & Social Media_files/Follow Mashable on Email, RSS & Social Media.html">see more&nbsp;&nbsp;&gt;</a></div>
+</div>
+</div>
+</div></li>
+<li class="nav-search submenu pull-right"><a class="search-trigger" href="http://mashable.com/search/">Search</a>
+<div class="dropdown-content">
+<div class="page-container">
+<div class="header-search-form">
+<form accept-charset="UTF-8" action="http://mashable.com/search/" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+<div class="ie-search-wrapper"><input autocomplete="off" class="header-search" id="q" name="q" type="text" value=""></div>
+<input class="btn btn-primary header-search-submit" name="commit" type="submit" value="Search"></form><div class="header-search-results"></div>
+</div>
+</div>
+</div></li>
+<li class="collapsable" data-tags=""><a href="http://mashable.com/category/must-reads">Must Reads</a></li>
+<li class="collapsable channel submenu" data-tags="how-to,facebook,twitter,youtube,google-plus"><a href="http://mashable.com/social-media/">Social Media</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="apps-software,dev-design,gadgets,mobile"><a href="http://mashable.com/tech/">Tech</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="advertising,marketing,media,small-business,startups,jobs"><a href="http://mashable.com/business/">Business</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="film,gaming,music,sports,television"><a href="http://mashable.com/entertainment/">Entertainment</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="us,world,climate,space,politics,social-good"><a href="http://mashable.com/us-world/">US &amp; World</a><div class="submenu-content"></div></li>
+<li class="collapsable channel submenu" data-tags="pics,memes,comics,conversations,videos-watercooler"><a href="http://mashable.com/watercooler/">Watercooler</a><div class="submenu-content"></div></li>
+<li class="collapsable" data-tags=""><a href="http://findjobs.mashable.com/">Jobs</a></li>
+<li class="submenu more"><a href="http://mashable.com/2011/11/18/follow-mashable/#"><!-- %span=t "header.nav.more" -->
+<span>More</span></a>
+<div class="submenu-content">
+<div class="page-container">
+<ul class="columns"><li><ul class="column-list"><li class="header">Channels</li>
+<li><a href="http://mashable.com/category/must-reads">Must Reads</a></li>
+<li><a href="http://mashable.com/social-media/">Social Media</a></li>
+<li><a href="http://mashable.com/tech/">Tech</a></li>
+<li><a href="http://mashable.com/business/">Business</a></li>
+<li><a href="http://mashable.com/entertainment/">Entertainment</a></li>
+<li><a href="http://mashable.com/us-world/">US &amp; World</a></li>
+<li><a href="http://mashable.com/watercooler/">Watercooler</a></li>
+<li><a href="http://findjobs.mashable.com/">Jobs</a></li></ul></li><li><ul class="column-list">
+<li class="header">Company</li><li><a href="http://mashable.com/about/">About Us</a></li><li><a href="http://www.wrightsmedia.com/sites/mashable/">Licensing &amp; Reprints</a></li><li><a href="http://mashable.com/2013/">Archive</a></li></ul></li><li><ul class="column-list">
+<li class="header">Contact</li><li><a href="http://mashable.com/contact-us/">Contact Us</a></li><li><a href="http://mashable.com/submit/">Submit News</a></li></ul></li><li><ul class="column-list">
+<li class="header">Advertise</li><li><a href="http://mashable.com/advertise/">Advertise</a></li></ul></li><li><ul class="column-list">
+<li class="header">Legal</li><li><a href="http://mashable.com/privacy/">Privacy Policy</a></li><li><a href="http://mashable.com/terms/">Terms of Use</a></li></ul></li><li><ul class="column-list">
+<li class="header">Apps</li><li><a href="http://itunes.apple.com/us/app/mashable/id356202138?mt=8">iPhone App</a></li><li><a href="http://itunes.apple.com/us/app/mashable-for-ipad/id370097986?mt=8">iPad App</a></li><li><a href="https://play.google.com/store/apps/details?id=com.mashable.android.phoenix">Android App</a></li></ul></li><li><ul class="column-list">
+<li class="header">Resources</li><li><a href="./Follow Mashable on Email, RSS & Social Media_files/Follow Mashable on Email, RSS & Social Media.html">Subscriptions</a></li></ul></li><li><ul class="column-list">
+<li class="header">Sites</li><li><a href="http://findjobs.mashable.com/">Jobs</a></li><li><a href="http://events.mashable.com/">Events</a></li><li><a href="http://mashable.com/sgs/">Social Good Summit</a></li><li><a href="http://mashable.com/media-summit/">Media Summit</a></li></ul></li></ul>
+</div>
+</div></li>
+</ul></div>
+</div></header>
+<header id="share-nav" class="descended"><div class="share-nav-inner">
+  <div class="menu">
+    <a></a>
+  </div>
+  <div class="logo">
+    <a class="brand" href="http://mashable.com/">
+      <span class="large"><img alt="Header_share_logo.v2" src="./Follow Mashable on Email, RSS & Social Media_files/header_share_logo.v2-11a2e0632ddb46b143c85e63f590734d.png"></span>
+      <span class="small"><img alt="Mobile_logo" src="./Follow Mashable on Email, RSS & Social Media_files/mobile_logo-8574a72af30ae3eace39485654580166.png"></span>
+    </a>
+  </div>
+  <div class="share-count">
+    22.7k
+  </div>
+  <div class="share-buttons v2">
+    <div class="primary-shares">
+      <a class="social-share facebook">
+        Share
+        <span class="expanded-text">on Facebook</span>
+      </a>
+      <a class="social-share twitter">
+        <span class="primary-text">Share</span>
+        <span class="alt-text">Tweet</span>
+        <span class="expanded-text">on Twitter</span>
+      </a>
+    </div>
+    <div class="secondary-shares">
+      <a class="social-share google_plus" data-active="true" data-gapiattached="true"></a>
+      <a class="social-share linked_in"></a>
+      <a class="social-share stumble_upon"></a>
+      <a class="social-share pinterest"></a>
+    </div>
+    <div class="share-toggle"></div>
+  </div>
+  <div class="sparkline"><canvas class="velocity" width="175" height="56"></canvas></div>
+</div></header></div>
+<div id="scrollable"><div class="loader"></div>
+<div class="ad_container" style="display: none;"><iframe class="ad" frameborder="0" scrolling="no" src="about:blank" width="0" height="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;"></iframe></div><header class="box970">
+<div class="page-container"><center class="visible-desktop"><div class="ad_container" style="display: none;"><iframe class="ad" frameborder="0" scrolling="no" src="about:blank" width="0" height="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 50px;"></iframe></div></center></div>
+</header>
+<div class="posts show" id="body-container"><div id="main">
+<div class="page-container">
+
+<div id="body"><hgroup class="page-header channel" data-channel="social-media" data-section="sec0=socmed&amp;sec1=index&amp;sec2=" id="post-head">
+<h2>Social Media</h2>
+<div class="follow-channel">
+<div class="follow-buttons">
+<a class="social-stub social-share facebook like" data-default="1" data-href="http://facebook.com/mashable" data-shares="1.7m">Like</a>
+<a class="social-stub social-share twitter follow" data-shares="3.7m" href="https://twitter.com/intent/follow?region=follow_link&screen_name=mashable&tw_p=followbutton&variant=2.0" target="_blank">Follow</a>
+<div id="___follow_2" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 124px; height: 20px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 124px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I2_1399115096631" name="I2_1399115096631" src="./Follow Mashable on Email, RSS & Social Media_files/follow(2).html" data-gapiattached="true"></iframe></div>
+</div>
+</div>
+</hgroup>
+<div class="flex-box">
+<div class="box-cell">
+<div class="above_960 adsense outside_post">
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_slot = "3991492827";
+</script>
+<script>
+  if(!hideAd) google_ad_width = 728;
+</script>
+<script>
+  if(!hideAd) google_ad_height = 15;
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+<div id="post-content">
+<div id="post-slider"><article class="full post" data-channel="socmed" data-id="4ec69ce23182970434000001" data-subchannels="how-to" data-topic="" data-velocity="" data-wp-id="732597" id="story">
+<header class="article-header">
+<h1 class="title" href="http://mashable.com/2011/11/18/follow-mashable/">How to Connect With Mashable via Email, RSS and Social Media</h1>
+<aside class="shares social">
+<div class="total-shares" data-index="0">
+<em class="minimal">22.7k</em>
+<div class="caption">Shares</div>
+</div>
+<div class="share-buttons v2"><div class="share-container">
+  <div class="share-count">22.7k</div>
+  <div class="primary-shares">
+    <a class="social-share facebook">
+      Share
+      <span class="expanded-text">on Facebook</span>
+    </a>
+    <a class="social-share twitter">
+      <span class="primary-text">Share</span>
+      <span class="alt-text">Tweet</span>
+      <span class="expanded-text">on Twitter</span>
+    </a>
+    <div class="share-toggle"></div>
+  </div>
+  <div class="secondary-shares">
+    <a class="social-share google_plus" data-active="true" data-gapiattached="true"></a>
+    <a class="social-share linked_in"></a>
+    <a class="social-share stumble_upon"></a>
+    <a class="social-share pinterest"></a>
+    <div class="secondary-share-toggle"></div>
+  </div>
+</div></div>
+<div class="velocity-graph tooltip-trigger" data-original-title="The Mashable Velocity graph shows how quickly people are sharing this article on the social Web." style="display: none;">
+<canvas class="velocity"></canvas>
+<div class="caption">What's This?</div>
+</div>
+</aside>
+
+<div class="above_960 adsense">
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_channel = "9077376301";
+</script>
+<script>
+  if(!hideAd) google_ad_output = "js";
+</script>
+<script>
+  if(!hideAd) google_max_num_ads = "3";
+</script>
+<script>
+  if(!hideAd) google_ad_type = "text";
+</script>
+<script>
+  if(!hideAd) google_feedback = "on";
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+<figure class="article-image"><a name="lead-image"></a>
+<div class="microcontent-wrapper">
+  <div class="microcontent-shares" data-description="" data-fragment="lead-image" data-image="/media/ZgkyMDEzLzAyLzA2L2ExL01hc2hhYmxlVGVhLmY3ZjVkLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/7dc6a25e/b09/Mashable-Team-GO-1-640x400.jpg" data-url="">
+    <a class="social-share microcontent-share-badge network-badge network-badge-facebook facebook" href="http://mashable.com/2011/11/18/follow-mashable/#"></a><a class="social-share microcontent-share-badge network-badge network-badge-twitter twitter" href="http://mashable.com/2011/11/18/follow-mashable/#"></a><a class="social-share microcontent-share-badge network-badge network-badge-google_plus google_plus" href="http://mashable.com/2011/11/18/follow-mashable/#" data-active="true" data-gapiattached="true"></a><a class="social-share microcontent-share-badge network-badge network-badge-pinterest pinterest" href="http://mashable.com/2011/11/18/follow-mashable/#"></a>
+  </div><img alt="Mashable-team-go-1-640x400" class="microcontent" data-fragment="lead-image" data-image="/media/ZgkyMDEzLzAyLzA2L2ExL01hc2hhYmxlVGVhLmY3ZjVkLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/7dc6a25e/b09/Mashable-Team-GO-1-640x400.jpg" data-micro="1" data-url="null" src="./Follow Mashable on Email, RSS & Social Media_files/Mashable-Team-GO-1-640x400.jpg">
+</div></figure>
+
+<div class="article-info"><a class="byline" href="http://mashable.com/people/meghan/"><img alt="Blue%20headshot" class="author_image" src="./Follow Mashable on Email, RSS & Social Media_files/Blue Headshot.jpg"><div class="author_and_date"><span class="author_name">By Meghan Peters</span><time datetime="Fri, 18 Nov 2011 17:58:49 +0000">Nov 18, 2011</time></div></a></div>
+
+</header>
+<section class="article-content">
+
+<p><em>Mashable</em> has <a href="http://mashable.com/2011/09/13/mashable-new-channels/" data-crackerjax="#post-slider">grown immensely</a> since its humble beginnings in 2006. As we continue to move from a niche blog to a full-fledged news site, the topics we cover and the ways readers connect with us are changing.</p>
+<p>You can now find <em>Mashable</em> articles under seven channels: Social Media, Tech, Business, Entertainment, US &amp; World, Lifestyle and Watercooler. Each has a set of subtopics, such as Gaming and TV under Entertainment and Advertising and Startups under Business, so you can dive deeper into more specific coverage areas.</p>
+<p>With this restructuring of <em>Mashable</em> content comes a change in our presence on the social web. While many readers visit the website directly or subscribe to our RSS feed, others prefer to read news via <a href="http://mashable.com/follow/subscriptions/">daily emails</a> or Twitter and Facebook pages. Now that we've aligned our social accounts to match our new site topics, we thought we'd let you know how to find us however works best for you.</p>
+<h3><a href="http://mashable.com/" target="_blank">Mashable</a></h3>
+<div class="clearfix">
+<div class="grid_2 alignleft"><p>✩ <a href="http://facebook.com/mashable/" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashable/" target="_blank">Follow on Twitter</a><br> ✩ <a href="https://plus.google.com/u/0/+Mashable/" target="_blank">Follow on Google+</a><br>✩ <a href="http://pinterest.com/mashable/" target="_blank">Follow on Pinterest</a><br>✩ <a href="http://feeds.mashable.com/Mashable" target="_blank">Follow via RSS</a><br>✩ <a href="http://mashable.com/follow/subscriptions/" target="_blank">Follow via Email</a></p></div>
+<div class="grid_2 alignright"><p>✩ <a href="http://su.pr/Mashable" target="_blank">Follow on StumbleUpon</a><br> ✩ <a href="http://www.linkedin.com/today/mashable.com" target="_blank">Follow on LinkedIn Today</a><br> ✩ <a href="http://www.linkedin.com/groups?mostPopular=&gid=60043" target="_blank">Join discussions on LinkedIn</a><br> ✩ <a href="http://www.linkedin.com/company/mashable" target="_blank">Get company updates on LinkedIn</a><br> ✩ <a href="http://www.reddit.com/domain/mashable.com/" target="_blank">Follow stories on Reddit</a><br> ✩ <a href="http://www.foursquare.com/mashable" target="_blank">Get tips on Foursquare</a></p></div>
+<div class="grid_2 alignleft">
+<h3>Video and Photo</h3>
+<p>✩ <a href="http://www.youtube.com/mashable" target="_blank">Subscribe to YouTube channel</a><br> ✩ <a href="http://vimeo.com/mashable" target="_blank">Subscribe to Vimeo channel</a><br> ✩ <a href="http://www.flickr.com/photos/mashable" target="_blank">Follow on Flickr</a><br> ✩ <a href="http://instagram.com/mashable" target="_blank">Follow on Instagram</a><br>✩ Search "mashable" on Vine</p>
+</div>
+<div class="grid_2 alignright">
+<h3>Mashable's Mobile Apps</h3>
+<p>✩ <a href="http://itunes.apple.com/us/app/mashable/id356202138?mt=8" target="_blank">Download the iPhone App</a> [iTunes link]<br>✩ <a href="https://itunes.apple.com/us/app/mashable-for-ipad/id503757688?ls=1&mt=8" target="_blank">Download the iPad App</a> [iTunes link]<br> ✩ <a href="https://market.android.com/details?id=com.intridea.mashable" target="_blank">Download the Android App</a> [Android Market link]<br> ✩ <a href="http://www.amazon.com/Mashable/dp/B0073UBNG0/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1331657659&sr=1-1" target="_blank">Download the Kindle Fire App</a><br></p>
+</div>
+<div class="grid_2 alignleft">
+<h3>Mashable's Events</h3>
+<p>✩ <a href="http://www.meetup.com/mashable/" target="_blank">Attend a Mashable Meetup</a><br>✩ <a href="http://twitter.com/mashableevents" target="_blank">Follow @mashableevents</a><br> ✩ <a href="http://www.facebook.com/mashable?v=app_2344061033" target="_blank">Follow on Facebook Events</a><br> ✩ <a href="http://plancast.com/mashable" target="_blank">Follow on Plancast</a><br> ✩ <a href="http://mashable.eventbrite.com/" target="_blank">Follow on Eventbrite</a></p>
+</div>
+<div class="grid_2 alignright">
+<h3>Desktop and Web Applications</h3>
+<p>✩ <a href="http://itunes.apple.com/us/app/mashable-for-mac/id412390413?mt=12" target="_blank">Mashable Mac App</a> [iTunes Link]<br> ✩ <a href="https://apps.facebook.com/mashablefb/" target="_blank">Mashable Facebook App</a><br> ✩ <a href="http://pulse.yahoo.com/y/apps/HCguHs44/" target="_blank">Mashable Yahoo App</a><br> ✩ <a href="http://bit.ly/mashchrome" target="_blank">Mashable Chrome App</a><br> ✩ <a href="https://chrome.google.com/extensions/detail/cgocamcblocbklnncjaafgkcaepaejel" target="_blank">Mashable Chrome Extension</a></p>
+</div>
+<div class="grid_2 alignleft">
+<h3><a name="socialmedia" href="http://mashable.com/socialmedia">Social Media</a></h3>
+<p>✩ <a href="http://feeds.mashable.com/mashable/socialmedia" target="_blank">Follow via RSS</a><br>✩ <a href="http://facebook.com/mashable.socialmedia" target="_blank">Connect on Facebook</a><br>✩ <a href="http://mashable.com/social-media/">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignright">
+<h3><a name="tech" href="http://mashable.com/tech">Tech</a></h3>
+<p>✩ <a href="http://feeds.mashable.com/mashable/tech" target="_blank">Follow via RSS</a><br>✩ <a href="http://facebook.com/mashable.tech" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashabletech" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignleft">
+<h3><a name="business" href="http://mashable.com/business">Business</a></h3>
+<p>✩ <a href="http://feeds.mashable.com/mashable/business" target="_blank">Follow via RSS</a><br>✩ <a href="http://facebook.com/mashable.business" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashbusiness" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignright">
+<h3><a name="usworld" href="http://mashable.com/us-world">US &amp; World</a></h3>
+<p>✩ <a href="http://feeds.mashable.com/Mashable/USWorld" target="_blank">Follow via RSS</a><br>✩ <a href="http://facebook.com/mashable.usworld" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashusworld" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignleft">
+<h3><a name="media" href="http://mashable.com/entertainment">Entertainment</a></h3>
+<p>✩ <a href="http://feeds.mashable.com/mashable/entertainment" target="_blank">Follow via RSS</a><br>✩ <a href="http://facebook.com/mashable.entertainment" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashentertain" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignright">
+<h3><a name="webvideo" href="http://mashable.com/video">Video</a></h3>
+<p>✩ <a name="webvideo"></a><a href="http://feeds.mashable.com/mashable/video" target="_blank">Follow via RSS</a><br>✩ <a name="webvideo"></a><a href="http://facebook.com/mashable.video" target="_blank">Connect on Facebook</a><br>✩ <a name="webvideo"></a><a href="http://twitter.com/mashablevideo" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignleft">
+<h3><a name="media" href="http://mashable.com/entertainment">Lifestyle</a></h3>
+<p>✩ <a href="http://facebook.com/mashable.lifestyle" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashlifestyle" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignright">
+<h3><a name="usworld" href="http://mashable.com/us-world">Watercooler</a></h3>
+<p>✩ <a href="http://facebook.com/mashable.watercooler" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/watercooler" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignleft">
+<h3><a name="jobs" href="http://mashable.com/jobs">Jobs</a></h3>
+<p>✩ <a href="http://feeds.mashable.com/mashable/jobs" target="_blank">Follow via RSS</a><br>✩ <a href="http://facebook.com/mashable.jobs" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashablejobs" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignright">
+<h3>Mashable HQ</h3>
+<p>✩ <a href="http://mashablehq.com/" target="_blank">Mashable HQ Tumblr</a><br>✩ <a href="http://facebook.com/mashablehq" target="_blank">Connect on Facebook</a><br>✩ <a href="http://twitter.com/mashablehq" target="_blank">Follow on Twitter</a></p>
+</div>
+<div class="grid_2 alignleft">
+<h3>Staff</h3>
+<p>✩ <a href="http://mashable.com/2011/12/08/facebook-subscribe-button-mashable/" target="_blank" data-crackerjax="#post-slider">Subscribe to staff on Facebook</a><br>✩ <a href="http://twitter.com/#!/mashable/mashable-staff-24/" target="_blank">Follow our staff Twitter list</a><br>✩ <a href="http://mashable.com/2011/07/15/mashable-google-plus/" target="_blank" data-crackerjax="#post-slider">Add staff to Google+ Circles</a></p>
+</div>
+</div>
+
+
+
+</section>
+<footer class="article-topics">
+Topics:
+<a href="http://mashable.com/category/community/">community</a>, <a href="http://mashable.com/category/how-to/">How To</a>, <a href="http://mashable.com/category/social-media/">Social Media</a>
+</footer>
+
+<div data-display-daily-newsletter="show" id="newsletter-signup"><div id="newsletter-signup-wrapper">
+  <div class="signup-box">
+    <h1>Get our hottest stories delivered to your inbox.</h1>
+    <h3>Sign up for our personalized daily newsletter</h3>
+    <form accept-charset="UTF-8" action="http://link.mashable.com/s/Top+Stories" method="post">
+      <div style="margin:0;padding:0;display:inline">
+        <input name="utf8" type="hidden" value="✓">
+        <input name="sailthru_event" type="hidden" value="daily_newsletter_signup">
+        <input name="sailthru_source" type="hidden" value="daily_bottom_of_article">
+        <input name="new_lists[]" type="hidden" value="Top Stories">
+        <input name="new_lists[]" type="hidden" value="Alert List">
+        <input name="new_lists[]" type="hidden" value="Viral News Alerts">
+      </div>
+      <label class="email">
+        <input class="email" id="email" name="email" placeholder="email" required="required" type="email">
+      </label>
+      <label class="submit">
+        <input class="submit" name="commit" type="submit" value="Sign Up">
+      </label>
+    </form>
+  </div>
+</div></div>
+
+<div id="taboola-container">
+<div class="iframe-container">
+<iframe class="taboola" src="./Follow Mashable on Email, RSS & Social Media_files/saved_resource.html"></iframe>
+</div>
+</div>
+<script>
+  if(window.pageChanged)
+    window.omni({"channel":"social-media","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":21424.5,"h_buy":null,"h_pub_buy":null,"v_cur":0.0,"v_max":0.0,"v_cur_i":0,"v_max_i":0,"events":"event51,event61","top_channel":"social-media","content_source_type":"Internal","content_source_name":"Internal","author_name":"Meghan Peters","age":"892","pub_day":18,"pub_month":11,"pub_year":2011,"pub_date":"11/18/2011","isPostView":true,"post_lead_type":"Default","topics":"community,How To,Mashable,Social Media,Uncategorized","campaign":null,"display_mode":null});
+    metaData = {"link":[["canonical","http://mashable.com/2011/11/18/follow-mashable/"],["image_src","http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e769f71b/189/Mashable-Team-GO-11.jpg"]],"meta_property":[["og:url","http://mashable.com/2011/11/18/follow-mashable/"],["og:title","Follow Mashable on Email, RSS & Social Media"],["og:type","article"],["og:site_name","Mashable"],["og:description","Connect with Mashable staff and content on Facebook, Twitter, Google+, email, RSS and more."],["og:image","http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e769f71b/189/Mashable-Team-GO-11.jpg"],["og:article:published_time","2011-11-18T17:58:49Z"],["og:article:modified_time","2013-11-05T21:41:15Z"],["og:article:publisher","https://www.facebook.com/mashable"]],"meta_name":[["description","Connect with Mashable staff and content on Facebook, Twitter, Google+, email, RSS and more."],["keywords","mashable, community, uncategorized, social-media, how-to"],["twitter:title","How to Connect With Mashable via Email, RSS and Social Media"],["twitter:description","Mashable has grown immensely since its humble beginnings in 2006. As we continue to move from a niche blog to a full-fledged news site, the topics we cover and the ways readers connect with us are cha..."],["twitter:image","http://rack.2.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/b5609917/189/Mashable-Team-GO-11.jpg"],["twitter:site","@mashable"],["twitter:url","http://mashable.com/2011/11/18/follow-mashable/"],["twitter:creator","@mashable"],["twitter:card","photo"],["twitter:image:width","560"],["twitter:image:height","750"],["date","2011-11-18 17:58:49 UTC"],["sailthru.author","Meghan Peters"],["sailthru.image.thumb","http://rack.2.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/6b9c9a18/189/Mashable-Team-GO-11.jpg"],["sailthru.image.full","http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/ea570747/189/Mashable-Team-GO-11.jpg"],["sailthru.lead_image","http://rack.0.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/249a6053/189/Mashable-Team-GO-11.jpg"],["sailthru.secondary_image","http://rack.3.mshcdn.com/media/ZgkyMDEzLzExLzA1L2ExL01hc2hhYmxlVGVhLmY3MTE5LmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/4cd20767/189/Mashable-Team-GO-11.jpg"]],"short_url":[["short_url","http://on.mash.to/uQvbzE"]]};
+</script>
+<div class="right_rail_replace">
+<div class="ad_container" style="display: none;"><iframe class="ad" frameborder="0" scrolling="no" src="about:blank" width="0" height="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div>
+
+</div>
+</article>
+</div>
+<div class="article-comments limit-comments">
+<div data-article-id="4ec69ce23182970434000001" data-checksum="b2077dfae3306a16f1bcf82863640f9b" data-collection-meta="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IkhvdyB0byBDb25uZWN0IFdpdGggTWFzaGFibGUgdmlhIEVtYWlsLCBSU1MgYW5kIFNvY2lhbCBNZWRpYSIsInVybCI6Imh0dHA6Ly9tYXNoYWJsZS5jb20vMjAxMS8xMS8xOC9mb2xsb3ctbWFzaGFibGUvIiwidGFncyI6Im1hc2hhYmxlLGNvbW11bml0eSx1bmNhdGVnb3JpemVkLHNvY2lhbC1tZWRpYSxob3ctdG8iLCJjaGVja3N1bSI6ImIyMDc3ZGZhZTMzMDZhMTZmMWJjZjgyODYzNjQwZjliIiwiYXJ0aWNsZUlkIjoiNGVjNjljZTIzMTgyOTcwNDM0MDAwMDAxIn0.sx8KRhxP_a9eBWkddHFTg-FsIyLi4r0kMU2rklaxWxg" data-network="mashable.fyre.co" data-root="zor.livefyre.com" data-site-id="312274" id="livefyre_comments"></div>
+<a class="btn btn-light load-comments" href="http://mashable.com/2011/11/18/follow-mashable/#">Load Comments</a>
+<div id="powered_by_livefyre_new">
+<a href="http://livefyre.com/" target="_blank">Powered by Livefyre</a>
+</div>
+</div>
+</div>
+</div>
+<aside class="box-cell sidebar">
+<div class="ad sidebar-inset sidebar-drop">
+<div class="ad_container" style="display: none;"><iframe class="ad" frameborder="0" scrolling="no" src="about:blank" width="0" height="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div>
+
+</div>
+<h1 class="ribbon hot">What's Hot</h1>
+<div class="sidebar-inset" id="big-stories"><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/03/apple-v-samsung-judgment">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/03/apple-v-samsung-judgment/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.2.mshcdn.com/media/ZgkyMDE0LzA1LzAzLzZkL3NhbXN1bmdhcHBsLmI2Y2Y1LmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/39884c9e/22f/samsung-apple.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.2.mshcdn.com/media/ZgkyMDE0LzA1LzAzLzZkL3NhbXN1bmdhcHBsLmI2Y2Y1LmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/c4f4c3f2/22f/samsung-apple.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/samsung-apple.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/tech/">Tech</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/03/apple-v-samsung-judgment/">Samsung Resists Apple in Court, But the Biggest Winners Are Consumers</a>
+        </h1>
+        <div class="article-byline">Pete Pachal</div>
+        <p class="article-excerpt">With the judgment in Apple v. Samsung 2, the legal war over mobile technology appears to be winding down. And that's good news for consumers.
+</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/03/apple-v-samsung-judgment/">
+            <b>1.6k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Sat, 03 May 2014 05:37:56 +0000">5 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/03/apple-v-samsung-judgment/" data-shares="224" data-title="Samsung Resists Apple in Court, But the Biggest Winners Are Consumers" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/03/apple-v-samsung-judgment/" data-shares="1.2k" data-shorturl="http://on.mash.to/1rOnjb9" data-title="Samsung Resists Apple in Court, But the Biggest Winners Are Consumers" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/03/apple-v-samsung-judgment/" data-shares="34" data-title="Samsung Resists Apple in Court, But the Biggest Winners Are Consumers" href="javascript:void(0);" data-active="true" data-gapiattached="true">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/03/apple-v-samsung-judgment/" data-shares="88" data-title="Samsung Resists Apple in Court, But the Biggest Winners Are Consumers" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/samsung-guilty-of-infringing-apple-patents-again">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/samsung-guilty-of-infringing-apple-patents-again/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAzLzIxL0FQNDI3MTE1MTU3LjcxMzkzLmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/51216e09/ec5/AP427115157300.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA1LzAzLzIxL0FQNDI3MTE1MTU3LjcxMzkzLmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/d68b231c/ec5/AP427115157300.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/AP427115157300.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/business/">Business</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/samsung-guilty-of-infringing-apple-patents-again/">Samsung Guilty of Infringing on Apple Patents — Again</a>
+        </h1>
+        <div class="article-byline">Chris Taylor</div>
+        <p class="article-excerpt">After three days of deliberation, a San Jose court has found Samsung guilty of infringement on a number of Apple smartphone patents, just as it did in a similar patent case two years ago. But this time around, the result isn't as clear cut, the award...</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/samsung-guilty-of-infringing-apple-patents-again/">
+            <b>995</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Sat, 03 May 2014 00:14:01 +0000">10 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/samsung-guilty-of-infringing-apple-patents-again/" data-shares="139" data-title="Samsung Guilty of Infringing on Apple Patents — Again" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/samsung-guilty-of-infringing-apple-patents-again/" data-shares="823" data-shorturl="http://on.mash.to/1pYF9wB" data-title="Samsung Guilty of Infringing on Apple Patents — Again" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/samsung-guilty-of-infringing-apple-patents-again/" data-shares="4" data-title="Samsung Guilty of Infringing on Apple Patents — Again" href="javascript:void(0);" data-active="true" data-gapiattached="true">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/samsung-guilty-of-infringing-apple-patents-again/" data-shares="28" data-title="Samsung Guilty of Infringing on Apple Patents — Again" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/glenn-greenwald-nsa-michael-hayden-debate">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/glenn-greenwald-nsa-michael-hayden-debate/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA1LzAzL2I2L0dyZWVud2FsZF9ILjM3MTJkLmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/27e0ebcd/f5f/Greenwald_Hayden.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.2.mshcdn.com/media/ZgkyMDE0LzA1LzAzL2I2L0dyZWVud2FsZF9ILjM3MTJkLmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/14b45df4/f5f/Greenwald_Hayden.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/Greenwald_Hayden.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/us-world/">US &amp; World</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/glenn-greenwald-nsa-michael-hayden-debate/">Glenn Greenwald Faces Off Against Former NSA Chief Michael Hayden</a>
+        </h1>
+        <div class="article-byline">Lorenzo Franceschi-Bicchierai</div>
+        <p class="article-excerpt">Glenn Greenwald and former NSA chief Michael Hayden will square off in a debate on state surveillance that promises to be explosive.</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/glenn-greenwald-nsa-michael-hayden-debate/">
+            <b>817</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 22:00:56 +0000">13 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/glenn-greenwald-nsa-michael-hayden-debate/" data-shares="109" data-title="Glenn Greenwald Faces Off Against Former NSA Chief Michael Hayden" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/glenn-greenwald-nsa-michael-hayden-debate/" data-shares="673" data-shorturl="http://on.mash.to/1rXXQ0X" data-title="Glenn Greenwald Faces Off Against Former NSA Chief Michael Hayden" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/glenn-greenwald-nsa-michael-hayden-debate/" data-shares="5" data-title="Glenn Greenwald Faces Off Against Former NSA Chief Michael Hayden" href="javascript:void(0);" data-active="true" data-gapiattached="true">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/glenn-greenwald-nsa-michael-hayden-debate/" data-shares="30" data-title="Glenn Greenwald Faces Off Against Former NSA Chief Michael Hayden" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/what-happened-in-ukraine">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/what-happened-in-ukraine/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzE4L0Vhc3RVa3JhaW5lLmRhNzdmLmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/b3eb48af/480/East-Ukraine-May-2.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzE4L0Vhc3RVa3JhaW5lLmRhNzdmLmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/14e1e903/480/East-Ukraine-May-2.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/East-Ukraine-May-2.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/us-world/">US &amp; World</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/what-happened-in-ukraine/">This Is What Happened in Ukraine Today</a>
+        </h1>
+        <div class="article-byline">Amanda Wills</div>
+        <p class="article-excerpt">In eastern Ukraine, the sun has set on a long, violent day of fighting between the Ukrainian military and pro-Russia separatists. If you're just catching up, here's what happened.</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/what-happened-in-ukraine/">
+            <b>2.1k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 19:13:13 +0000">15 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/what-happened-in-ukraine/" data-shares="1.2k" data-title="This Is What Happened in Ukraine Today" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/what-happened-in-ukraine/" data-shares="909" data-shorturl="http://on.mash.to/1ueQ1pz" data-title="This Is What Happened in Ukraine Today" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/what-happened-in-ukraine/" data-shares="11" data-title="This Is What Happened in Ukraine Today" href="javascript:void(0);" data-active="true" data-gapiattached="true">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/what-happened-in-ukraine/" data-shares="18" data-title="This Is What Happened in Ukraine Today" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/drones-legal">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/drones-legal/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzg4L0Ryb25lcy5qcGcuODQ3MjQuanBnCnAJdGh1bWIJMzY0eDEzMCMKZQlqcGc/e76c7974/bab/Drones.jpg.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzg4L0Ryb25lcy5qcGcuODQ3MjQuanBnCnAJdGh1bWIJNzI4eDI2MCMKZQlqcGc/dd2cb7ad/bab/Drones.jpg.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/Drones.jpg.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/business/">Business</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/drones-legal/">Will This Fly?: A Primer on Drone Laws</a>
+        </h1>
+        <div class="article-byline">Todd Wasserman</div>
+        <p class="article-excerpt">There is often a lag between new innovations and laws' ability to restrain them. LSD didn't become illegal until October 1966, when use was widespread enough to capture Time's attention. Cyberbullying went on for years before laws to combat it were e...</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/drones-legal/">
+            <b>1.4k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 20:20:50 +0000">14 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/drones-legal/" data-shares="152" data-title="Will This Fly?: A Primer on Drone Laws" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/drones-legal/" data-shares="1.1k" data-shorturl="http://on.mash.to/1iKSTkw" data-title="Will This Fly?: A Primer on Drone Laws" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/drones-legal/" data-shares="76" data-title="Will This Fly?: A Primer on Drone Laws" href="javascript:void(0);" data-active="true" data-gapiattached="true">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/drones-legal/" data-shares="66" data-title="Will This Fly?: A Primer on Drone Laws" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/odessa-ukraine">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/odessa-ukraine/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.2.mshcdn.com/media/ZgkyMDE0LzA1LzAzL2E2L09kZXNzYVVrcmFpLjgyOTZkLmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/7d39c2b6/0bb/OdessaUkraine.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA1LzAzL2E2L09kZXNzYVVrcmFpLjgyOTZkLmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/fc7154e1/0bb/OdessaUkraine.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/OdessaUkraine.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/us-world/">US &amp; World</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/odessa-ukraine/">Dozens Dead in Odessa as New Violence Spreads to Southern Ukraine</a>
+        </h1>
+        <div class="article-byline">Brian Ries</div>
+        <p class="article-excerpt">A new wave of violence broke out in the once-peaceful southern city of Odessa, Ukraine, leaving dozens dead. It's the second-bloodiest day in the country since the EuroMaidan revolution began.</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/odessa-ukraine/">
+            <b>1k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 20:07:08 +0000">14 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/odessa-ukraine/" data-shares="95" data-title="Dozens Dead in Odessa as New Violence Spreads to Southern Ukraine" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/odessa-ukraine/" data-shares="893" data-shorturl="http://on.mash.to/1mm2pmI" data-title="Dozens Dead in Odessa as New Violence Spreads to Southern Ukraine" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/odessa-ukraine/" data-shares="11" data-title="Dozens Dead in Odessa as New Violence Spreads to Southern Ukraine" href="javascript:void(0);" data-active="true" data-gapiattached="true">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/odessa-ukraine/" data-shares="24" data-title="Dozens Dead in Odessa as New Violence Spreads to Southern Ukraine" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/google-to-kill-urls-in-chrome">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/google-to-kill-urls-in-chrome/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.2.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzVkL0Nocm9tZVVSTC5hY2Q2ZC5qcGcKcAl0aHVtYgkzNjR4MTMwIwplCWpwZw/3ff5e869/d8e/Chrome-URL.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzVkL0Nocm9tZVVSTC5hY2Q2ZC5qcGcKcAl0aHVtYgk3Mjh4MjYwIwplCWpwZw/cc0ec76f/d8e/Chrome-URL.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/Chrome-URL.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/tech/">Tech</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/google-to-kill-urls-in-chrome/">Google Hints It May Toss Long URLs From Chrome</a>
+        </h1>
+        <div class="article-byline">Karissa Bell</div>
+        <p class="article-excerpt">A recent update to Chrome's Canary browser added a feature that hides long URL's in the browser's address bar.</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/google-to-kill-urls-in-chrome/">
+            <b>2.6k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 19:10:01 +0000">15 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/google-to-kill-urls-in-chrome/" data-shares="1.3k" data-title="Google Hints It May Toss Long URLs From Chrome" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/google-to-kill-urls-in-chrome/" data-shares="985" data-shorturl="http://on.mash.to/1hkCyn9" data-title="Google Hints It May Toss Long URLs From Chrome" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/google-to-kill-urls-in-chrome/" data-shares="289" data-title="Google Hints It May Toss Long URLs From Chrome" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/google-to-kill-urls-in-chrome/" data-shares="51" data-title="Google Hints It May Toss Long URLs From Chrome" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/first-mers-case-united-states">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/first-mers-case-united-states/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzNhL01FUlMuZjc2NGQuanBnCnAJdGh1bWIJMzY0eDEzMCMKZQlqcGc/62caf498/ee0/MERS.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzNhL01FUlMuZjc2NGQuanBnCnAJdGh1bWIJNzI4eDI2MCMKZQlqcGc/bea1be3a/ee0/MERS.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/MERS.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/us-world/">US &amp; World</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/first-mers-case-united-states/">First Case of Deadly Middle Eastern Virus Found in U.S.</a>
+        </h1>
+        <div class="article-byline">Jason Abbruzzese</div>
+        <p class="article-excerpt">The Center for Disease Control has confirmed that a case of the deadly Middle East respiratory syndrome known as MERS has been found in the U.S. for the first time.</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/first-mers-case-united-states/">
+            <b>1.9k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 19:01:27 +0000">16 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/first-mers-case-united-states/" data-shares="962" data-title="First Case of Deadly Middle Eastern Virus Found in U.S." href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/first-mers-case-united-states/" data-shares="939" data-shorturl="http://on.mash.to/1iSn0M5" data-title="First Case of Deadly Middle Eastern Virus Found in U.S." href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/first-mers-case-united-states/" data-shares="11" data-title="First Case of Deadly Middle Eastern Virus Found in U.S." href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/first-mers-case-united-states/" data-shares="27" data-title="First Case of Deadly Middle Eastern Virus Found in U.S." href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/modern-farmer">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/modern-farmer/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzFhL2Zhcm1pbmcuNjlkZWQuanBnCnAJdGh1bWIJMzY0eDEzMCMKZQlqcGc/fb35bbb9/b22/farming.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzFhL2Zhcm1pbmcuNjlkZWQuanBnCnAJdGh1bWIJNzI4eDI2MCMKZQlqcGc/776348da/b22/farming.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/farming.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/business/">Business</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/modern-farmer/">A 1-Year-Old Magazine About Farming Is the Talk of the Media World</a>
+        </h1>
+        <div class="article-byline">Seth Fiegerman</div>
+        <p class="article-excerpt">Ann Marie Gardner couldn't help but be starstruck by all the big names gathered at the Marriott Marquis in Manhattan for the National Magazine Awards. Most in attendance worked at publications that had been around for decades and had hobnobbed with c...</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/modern-farmer/">
+            <b>2.6k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 18:39:22 +0000">16 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/modern-farmer/" data-shares="970" data-title="A 1-Year-Old Magazine About Farming Is the Talk of the Media World" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/modern-farmer/" data-shares="1.3k" data-shorturl="http://on.mash.to/1kBrw0C" data-title="A 1-Year-Old Magazine About Farming Is the Talk of the Media World" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/modern-farmer/" data-shares="9" data-title="A 1-Year-Old Magazine About Farming Is the Talk of the Media World" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/modern-farmer/" data-shares="270" data-title="A 1-Year-Old Magazine About Farming Is the Talk of the Media World" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/mike-giglio-ukraine-kidnapped">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/mike-giglio-ukraine-kidnapped/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzhmL1VrcmFpbmVTb2xkLjQ2OGRkLmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/85eb09f0/07e/UkraineSoldierSloviansk.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.2.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzhmL1VrcmFpbmVTb2xkLjQ2OGRkLmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/f609dcb0/07e/UkraineSoldierSloviansk.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/UkraineSoldierSloviansk.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/us-world/">US &amp; World</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/mike-giglio-ukraine-kidnapped/">BuzzFeed Reporter Kidnapped in Ukraine: 'I Was Pretty Freaked Out'</a>
+        </h1>
+        <div class="article-byline">Brian Ries</div>
+        <p class="article-excerpt">BuzzFeed reporter Mike Giglio was kidnapped in eastern Ukraine and released on Friday. He tells Mashable his story.</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/mike-giglio-ukraine-kidnapped/">
+            <b>753</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 17:36:46 +0000">17 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/mike-giglio-ukraine-kidnapped/" data-shares="90" data-title="BuzzFeed Reporter Kidnapped in Ukraine: &#39;I Was Pretty Freaked Out&#39;" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/mike-giglio-ukraine-kidnapped/" data-shares="635" data-shorturl="http://on.mash.to/1hky0gL" data-title="BuzzFeed Reporter Kidnapped in Ukraine: &#39;I Was Pretty Freaked Out&#39;" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/mike-giglio-ukraine-kidnapped/" data-shares="7" data-title="BuzzFeed Reporter Kidnapped in Ukraine: &#39;I Was Pretty Freaked Out&#39;" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/mike-giglio-ukraine-kidnapped/" data-shares="21" data-title="BuzzFeed Reporter Kidnapped in Ukraine: &#39;I Was Pretty Freaked Out&#39;" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/oauth-openid-not-new-heartbleed">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/oauth-openid-not-new-heartbleed/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyL2NiL0NvdmVydFJlZGlyLjhkYWQ1LmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/13d900d0/3e8/Covert-Redirect.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyL2NiL0NvdmVydFJlZGlyLjhkYWQ1LmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/3d01968a/3e8/Covert-Redirect.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/Covert-Redirect.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/tech/">Tech</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/oauth-openid-not-new-heartbleed/">Another Security Flaw Gets the Heartbleed Treatment, But Don't Believe the Hype</a>
+        </h1>
+        <div class="article-byline">Christina Warren</div>
+        <p class="article-excerpt">Don't freak out. Purported security flaws in OAuth 2.0 and OpenID are NOT the new Heartbleed.</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/oauth-openid-not-new-heartbleed/">
+            <b>2k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 17:39:57 +0000">17 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/oauth-openid-not-new-heartbleed/" data-shares="466" data-title="Another Security Flaw Gets the Heartbleed Treatment, But Don&#39;t Believe the Hype" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/oauth-openid-not-new-heartbleed/" data-shares="1.3k" data-shorturl="http://on.mash.to/1nb9PpF" data-title="Another Security Flaw Gets the Heartbleed Treatment, But Don&#39;t Believe the Hype" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/oauth-openid-not-new-heartbleed/" data-shares="77" data-title="Another Security Flaw Gets the Heartbleed Treatment, But Don&#39;t Believe the Hype" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/oauth-openid-not-new-heartbleed/" data-shares="188" data-title="Another Security Flaw Gets the Heartbleed Treatment, But Don&#39;t Believe the Hype" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="article-container sharable">
+  <article class="post short" id="post-2014/05/02/michael-jackson-justin-timberlake-single">
+    <div class="article-img-container">
+      <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/michael-jackson-justin-timberlake-single/">
+        <span class="_ppf loaded">
+  <span data-q="true" data-s="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzhkL21pY2hhZWxqYWNrLmVkOThhLmpwZwpwCXRodW1iCTM2NHgxMzAjCmUJanBn/54673444/e42/michaeljackson.jpg" data-z="364x130#"></span><span data-q="(min-resolution: 1.5dppx)" data-s="http://rack.0.mshcdn.com/media/ZgkyMDE0LzA1LzAyLzhkL21pY2hhZWxqYWNrLmVkOThhLmpwZwpwCXRodW1iCTcyOHgyNjAjCmUJanBn/09b6e4b3/e42/michaeljackson.jpg" data-z="728x260#"></span>
+<img src="./Follow Mashable on Email, RSS & Social Media_files/michaeljackson.jpg"></span>
+      </a>
+      
+    </div>
+    <div class="article-content-wrapper">
+      <div class="article-content">
+        
+        <a class="article-category" href="http://mashable.com/entertainment/">Entertainment</a>
+        <h1 class="article-title">
+          <a data-turbo-target="post-slider" href="http://mashable.com/2014/05/02/michael-jackson-justin-timberlake-single/">Michael Jackson's New Single Features Justin Timberlake — and It's a Thriller</a>
+        </h1>
+        <div class="article-byline">Neha Prakash</div>
+        <p class="article-excerpt">The new single from Michael Jackson's posthumous album Xscape has arrived, and it's retro King of Pop, featuring the reigning prince of pop, Justin Timberlake. The single, Love Never Felt So Good, debuted Thursday night at the iHeartRadio awards. The...</p>
+      </div>
+      <footer>
+        <div class="article-shares-stub">
+          <a class="num" href="http://mashable.com/2014/05/02/michael-jackson-justin-timberlake-single/">
+            <b>3.4k</b>
+            shares
+          </a>
+        </div>
+        <time class="article-date" datetime="Fri, 02 May 2014 16:46:38 +0000">18 hours ago</time>
+        
+        <div class="article-shares-links">
+          <a class="social-stub social-share facebook" data-href="http://mashable.com/2014/05/02/michael-jackson-justin-timberlake-single/" data-shares="2.1k" data-title="Michael Jackson&#39;s New Single Features Justin Timberlake — and It&#39;s a Thriller" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share twitter" data-href="http://mashable.com/2014/05/02/michael-jackson-justin-timberlake-single/" data-shares="1.2k" data-shorturl="http://on.mash.to/1fEp76i" data-title="Michael Jackson&#39;s New Single Features Justin Timberlake — and It&#39;s a Thriller" href="javascript:void(0);">
+            Tweet
+          </a>
+          <a class="social-stub social-share google_plus" data-href="http://mashable.com/2014/05/02/michael-jackson-justin-timberlake-single/" data-shares="11" data-title="Michael Jackson&#39;s New Single Features Justin Timberlake — and It&#39;s a Thriller" href="javascript:void(0);">
+            Share
+          </a>
+          <a class="social-stub social-share linked_in" data-href="http://mashable.com/2014/05/02/michael-jackson-justin-timberlake-single/" data-shares="56" data-title="Michael Jackson&#39;s New Single Features Justin Timberlake — and It&#39;s a Thriller" href="javascript:void(0);">
+            Share
+          </a>
+        </div>
+      </footer>
+    </div>
+  </article>
+</div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div><div class="ad_container" style="display: none;"><iframe class="ad" scrolling="no" frameborder="0" width="0" height="0" src="about:blank" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;"></iframe></div></div>
+</aside>
+</div>
+<div id="more-in-channel">
+<div class="page-header channel" data-channel="social-media" data-section="sec0=socmed&amp;sec1=index&amp;sec2=">
+<h2>More in Social Media</h2>
+</div>
+<div class="fixable-wrapper" id="column-headers">
+<div class="column-headers">
+<div class="headers">
+<div class="header column1 waypoint" data-fixselector="header.fixable"><a data-short="New" href="http://mashable.com/2011/11/18/follow-mashable/#">
+<em>The New Stuff</em>
+</a></div>
+<div class="header column2 waypoint" data-fixselector="header.fixable"><a data-short="Rising" href="http://mashable.com/2011/11/18/follow-mashable/#">
+<em>The Next Big Thing</em>
+</a></div>
+<div class="header column3 waypoint" data-fixselector="header.fixable"><a data-short="Hot" href="http://mashable.com/2011/11/18/follow-mashable/#">
+<em>What's Hot</em>
+</a></div>
+</div>
+</div>
+</div>
+<div class="slide-window">
+<div class="flex-box columns"><section class="column box-cell new-stories" id="column-new"><h1 class="semantic">The New Stuff</h1>
+<div class="column-content"></div></section><section class="column box-cell hot-stories" id="column-rising"><h1 class="semantic">The Next Big Thing</h1>
+<div class="column-content"></div></section><section class="column box-cell big-stories" id="column-hot"><h1 class="semantic">What's Hot</h1>
+<div class="column-content"></div></section></div>
+</div>
+</div>
+
+<div id="parsely-root" style="display: none">
+<span data-parsely-site="mashable.com" id="parsely-cfg"></span>
+</div>
+<script>
+  loadScriptAsync("//static.parsely.com/p.js", "parsely")
+</script>
+</div>
+</div>
+</div><div id="fb-root"></div><script>
+  if(window.initPage) { window.initPage() }
+  else { $(function() { window.initPage(); })}
+</script>
+</div><footer id="site-footer-wrapper" style="opacity: 0;">
+<div class="page-container" id="site-footer"><ul class="nav"><li><a href="http://mashable.com/about/">About Us</a></li><li><a href="http://findjobs.mashable.com/">Jobs</a></li><li><a href="http://mashable.com/advertise/">Advertise</a></li><li><a href="http://mashable.com/2011/05/09/connect-with-mashable/">Subscribe</a></li><li><a href="http://mashable.com/privacy/">Privacy</a></li><li><a href="http://mashable.com/terms/">Terms</a></li></ul><ul class="social"><li><a class="facebook" href="http://www.facebook.com/mashable/" target="_social"></a></li>
+<li><a class="twitter" href="https://twitter.com/mashable" target="_social"></a></li>
+<li><a class="gplus" href="https://plus.google.com/+Mashable" target="_social"></a></li>
+<li><a class="rss" href="http://feeds.mashable.com/Mashable" target="_social"></a></li>
+<li><a class="pinterest" href="http://pinterest.com/mashable/" target="_social"></a></li>
+<li><a class="youtube" href="http://www.youtube.com/user/mashable" target="_social"></a></li>
+<li><a class="stumbleupon" href="http://www.stumbleupon.com/channel/Mashable" target="_social"></a></li>
+<li><a class="linkedin" href="http://www.linkedin.com/today/mashable.com" target="_social"></a></li></ul>
+<div class="about">
+<a class="brand" href="http://mashable.com/">
+Mashable
+</a>
+<span class="blurb">is a leading source for news, information and resources for the Connected Generation. Mashable reports on the importance of digital innovation and how it empowers and inspires people around the world. Mashable's record 34 million unique visitors worldwide and 15 million social media followers are one of the most influential and engaged online communities. Founded in 2005, Mashable is headquartered in New York City with an office in San Francisco.</span>
+</div>
+<ul class="copyright-and-legal">
+<li>
+©2005-2014
+Mashable, Inc.
+</li>
+<li>
+Reproduction without explicit permission is prohibited. All Rights Reserved.
+</li>
+<li>
+Designed in collaboration with <a rel="nofollow" href="http://www.codeandtheory.com/">Code &amp; Theory</a>
+</li>
+</ul>
+</div>
+</footer>
+
+<noscript>
+&lt;img src='http://b.scorecardresearch.com/p?c1=2&amp;amp;c2=8750086&amp;amp;cv=2.0&amp;amp;cj=1'&gt;
+</noscript></div>
+<div class="mash-lightbox-side-menu needsclick" style="display: none;"></div></div>
+
+
+<iframe name="oauth2relay440652634" id="oauth2relay440652634" src="./Follow Mashable on Email, RSS & Social Media_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe src="./Follow Mashable on Email, RSS & Social Media_files/auth.html" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><script src="./Follow Mashable on Email, RSS & Social Media_files/nr-400.min.js"></script><script type="text/javascript" src="./Follow Mashable on Email, RSS & Social Media_files/faaaef6476"></script></body></html>
