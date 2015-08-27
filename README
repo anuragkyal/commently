@@ -1,3 +1,23 @@
-ICSAS
-======
-Inline Commenting System As Service
+ICSASS
+=====
+Inline Commenting System As Simple Service
+
+Motivation
+==========
+medium.com uses a different approach to commenting in the blogging community. Instead of only haveing comments at the bottom of the page, they allow paragraph level commenting.
+This can be tried out at this link:
+https://medium.com/@Haje/who-are-twitter-s-verified-users-af976fc1b032
+
+Idea
+====
+We made this app which allows blog owners to integrate this service to their blog by subscribing to our service.
+
+How to integrate
+================
+Blog owners will need to register with us. After registration is complete, we would send a JS and a CSS file which needs to be added to their blog page. It is as simple as this.
+
+Tech Stack
+==========
+Backend: Python/Flask
+Frontend: Jquery/CSS
+
