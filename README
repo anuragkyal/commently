@@ -14,10 +14,11 @@ We made this app which allows blog owners to integrate this service to their blo
 
 How to integrate
 ================
-Blog owners will need to register with us. After registration is complete, we would send a JS and a CSS file which needs to be added to their blog page. It is as simple as this.
+Blog owners will need to register with us. After registration is complete, we would send a JS and a CSS library which needs to be included with their blog page.
 
 Tech Stack
 ==========
 Backend: Python/Flask
 Frontend: Jquery/CSS
+Authorizations allowed: Facebook
 
